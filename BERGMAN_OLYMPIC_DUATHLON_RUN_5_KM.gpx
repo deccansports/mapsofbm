@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://ridewithgps.com/">
+  <metadata>
+    <name>BERGMAN OLYMPIC DUATHLON RUN 5 KM</name>
+    <link href="https://ridewithgps.com/routes/50010292">
+      <text>BERGMAN OLYMPIC DUATHLON RUN 5 KM</text>
+    </link>
+    <time>2025-03-18T18:44:28Z</time>
+  </metadata>
+  <rte>
+    <name>BERGMAN OLYMPIC DUATHLON RUN 5 KM</name>
+    <rtept lat="19.18762" lon="73.95975">
+      <name>Start</name>
+      <cmt>Start of route</cmt>
+    </rtept>
+    <rtept lat="19.19246" lon="73.96144">
+      <name>Sharp Right</name>
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+    <rtept lat="19.19299" lon="73.98076">
+      <name>Uturn</name>
+      <cmt>Make a U-turn</cmt>
+    </rtept>
+    <rtept lat="19.19246" lon="73.96144">
+      <name>Sharp Left</name>
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+    <rtept lat="19.1891" lon="73.9605">
+      <name>Slight Right</name>
+      <cmt>Keep right</cmt>
+    </rtept>
+    <rtept lat="19.18762" lon="73.95975">
+      <name>End</name>
+      <cmt>End of route</cmt>
+    </rtept>
+  </rte>
+</gpx>
