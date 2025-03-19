@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd" version="1.1" creator="http://ridewithgps.com/">
+  <metadata>
+    <name>BM OZAR SWIM 1.9 KM</name>
+    <link href="https://ridewithgps.com/routes/50010354">
+      <text>BM OZAR SWIM 1.9 KM</text>
+    </link>
+    <time>2025-03-18T18:51:13Z</time>
+  </metadata>
+  <trk>
+    <name>BM OZAR SWIM 1.9 KM</name>
+    <trkseg>
+      <trkpt lat="19.186997" lon="73.959702">
+        <ele>639.6</ele>
+      </trkpt>
+      <trkpt lat="19.186997" lon="73.959702">
+        <ele>639.6</ele>
+      </trkpt>
+      <trkpt lat="19.186284" lon="73.958976">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.185571" lon="73.958249">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.184858" lon="73.957522">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.184145" lon="73.956795">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.183433" lon="73.956068">
+        <ele>637.9</ele>
+      </trkpt>
+      <trkpt lat="19.183433" lon="73.956068">
+        <ele>637.9</ele>
+      </trkpt>
+      <trkpt lat="19.183618" lon="73.957466">
+        <ele>641.2</ele>
+      </trkpt>
+      <trkpt lat="19.183803" lon="73.958863">
+        <ele>640.2</ele>
+      </trkpt>
+      <trkpt lat="19.183803" lon="73.958863">
+        <ele>640.2</ele>
+      </trkpt>
+      <trkpt lat="19.183417" lon="73.959794">
+        <ele>639.5</ele>
+      </trkpt>
+      <trkpt lat="19.183031" lon="73.960725">
+        <ele>638.3</ele>
+      </trkpt>
+      <trkpt lat="19.182645" lon="73.961656">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.182259" lon="73.962587">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.182259" lon="73.962587">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.183046" lon="73.962113">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.183832" lon="73.961639">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.184619" lon="73.961165">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.185405" lon="73.960691">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.186192" lon="73.960217">
+        <ele>638.1</ele>
+      </trkpt>
+      <trkpt lat="19.186979" lon="73.959743">
+        <ele>639.4</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
