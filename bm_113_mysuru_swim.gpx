@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="http://ridewithgps.com/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd">
+  <metadata>
+    <name>bm 113 mysuru swim</name>
+    <link href="https://ridewithgps.com/routes/52738131">
+      <text>bm 113 mysuru swim</text>
+    </link>
+    <time>2025-09-20T17:27:38Z</time>
+  </metadata>
+  <trk>
+    <name>bm 113 mysuru swim</name>
+    <trkseg>
+      <trkpt lat="12.408513" lon="76.559088">
+        <ele>753.4</ele>
+      </trkpt>
+      <trkpt lat="12.408513" lon="76.559088">
+        <ele>753.4</ele>
+      </trkpt>
+      <trkpt lat="12.409444" lon="76.559505">
+        <ele>748.3</ele>
+      </trkpt>
+      <trkpt lat="12.410374" lon="76.559922">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.411305" lon="76.560339">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.412236" lon="76.560756">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.413167" lon="76.561173">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414098" lon="76.561591">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.415029" lon="76.562008">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.415029" lon="76.562008">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414915" lon="76.562936">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.4148" lon="76.563863">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414686" lon="76.564791">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414572" lon="76.565719">
+        <ele>746.1</ele>
+      </trkpt>
+      <trkpt lat="12.414458" lon="76.566646">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414343" lon="76.567574">
+        <ele>748.4</ele>
+      </trkpt>
+      <trkpt lat="12.414229" lon="76.568502">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414115" lon="76.569429">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.414" lon="76.570357">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.413886" lon="76.571285">
+        <ele>747.0</ele>
+      </trkpt>
+      <trkpt lat="12.413772" lon="76.572212">
+        <ele>747.3</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
