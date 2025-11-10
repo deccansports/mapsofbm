@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="http://ridewithgps.com/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd">
+  <metadata>
+    <name>Bergman Pune Ozar Swim</name>
+    <link href="https://ridewithgps.com/routes/52963383">
+      <text>Bergman Pune Ozar Swim</text>
+    </link>
+    <time>2025-10-09T12:36:08Z</time>
+  </metadata>
+  <trk>
+    <name>Bergman Pune Ozar Swim</name>
+    <trkseg>
+      <trkpt lat="19.186876" lon="73.960074">
+        <ele>638.9</ele>
+      </trkpt>
+      <trkpt lat="19.186861" lon="73.960083">
+        <ele>638.8</ele>
+      </trkpt>
+      <trkpt lat="19.186861" lon="73.960083">
+        <ele>638.8</ele>
+      </trkpt>
+      <trkpt lat="19.186861" lon="73.960083">
+        <ele>638.8</ele>
+      </trkpt>
+      <trkpt lat="19.185952" lon="73.960469">
+        <ele>638.4</ele>
+      </trkpt>
+      <trkpt lat="19.185043" lon="73.960855">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.184133" lon="73.961241">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.183224" lon="73.961626">
+        <ele>638.0</ele>
+      </trkpt>
+      <trkpt lat="19.182315" lon="73.962012">
+        <ele>638.4</ele>
+      </trkpt>
+      <trkpt lat="19.181406" lon="73.962398">
+        <ele>638.4</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
