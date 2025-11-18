@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="http://ridewithgps.com/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd">
+  <metadata>
+    <name>BERGMAN 113 TRI SWIM COURSE</name>
+    <link href="https://ridewithgps.com/routes/44792532">
+      <text>BERGMAN 113 TRI SWIM COURSE</text>
+    </link>
+    <time>2023-10-20T17:31:16Z</time>
+  </metadata>
+  <trk>
+    <name>BERGMAN 113 TRI SWIM COURSE</name>
+    <trkseg>
+      <trkpt lat="16.682015" lon="74.264716">
+        <ele>576.2</ele>
+      </trkpt>
+      <trkpt lat="16.682015" lon="74.264716">
+        <ele>576.2</ele>
+      </trkpt>
+      <trkpt lat="16.681282" lon="74.265589">
+        <ele>577.2</ele>
+      </trkpt>
+      <trkpt lat="16.680549" lon="74.266463">
+        <ele>578.0</ele>
+      </trkpt>
+      <trkpt lat="16.679815" lon="74.267337">
+        <ele>567.3</ele>
+      </trkpt>
+      <trkpt lat="16.679815" lon="74.267337">
+        <ele>567.3</ele>
+      </trkpt>
+      <trkpt lat="16.679367" lon="74.266519">
+        <ele>574.5</ele>
+      </trkpt>
+      <trkpt lat="16.678919" lon="74.265702">
+        <ele>575.4</ele>
+      </trkpt>
+      <trkpt lat="16.67847" lon="74.264884">
+        <ele>582.0</ele>
+      </trkpt>
+      <trkpt lat="16.678021" lon="74.264066">
+        <ele>581.1</ele>
+      </trkpt>
+      <trkpt lat="16.677574" lon="74.263248">
+        <ele>576.5</ele>
+      </trkpt>
+      <trkpt lat="16.677126" lon="74.262431">
+        <ele>578.8</ele>
+      </trkpt>
+      <trkpt lat="16.677176" lon="74.262403">
+        <ele>579.0</ele>
+      </trkpt>
+      <trkpt lat="16.677176" lon="74.262403">
+        <ele>579.0</ele>
+      </trkpt>
+      <trkpt lat="16.677708" lon="74.263349">
+        <ele>576.6</ele>
+      </trkpt>
+      <trkpt lat="16.678239" lon="74.264295">
+        <ele>582.1</ele>
+      </trkpt>
+      <trkpt lat="16.678771" lon="74.265241">
+        <ele>577.5</ele>
+      </trkpt>
+      <trkpt lat="16.679303" lon="74.266187">
+        <ele>574.4</ele>
+      </trkpt>
+      <trkpt lat="16.679835" lon="74.267132">
+        <ele>569.0</ele>
+      </trkpt>
+      <trkpt lat="16.679835" lon="74.267132">
+        <ele>569.0</ele>
+      </trkpt>
+      <trkpt lat="16.680523" lon="74.26625">
+        <ele>577.5</ele>
+      </trkpt>
+      <trkpt lat="16.681211" lon="74.265367">
+        <ele>576.1</ele>
+      </trkpt>
+      <trkpt lat="16.681899" lon="74.264485">
+        <ele>575.6</ele>
+      </trkpt>
+      <trkpt lat="16.681906" lon="74.264465">
+        <ele>575.8</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
