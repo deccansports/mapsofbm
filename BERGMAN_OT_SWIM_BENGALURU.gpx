@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="http://ridewithgps.com/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd">
+  <metadata>
+    <name>BERGMAN OT SWIM BENGALURU</name>
+    <link href="https://ridewithgps.com/routes/54221831">
+      <text>BERGMAN OT SWIM BENGALURU</text>
+    </link>
+    <time>2026-03-12T15:50:45Z</time>
+  </metadata>
+  <trk>
+    <name>BERGMAN OT SWIM BENGALURU</name>
+    <trkseg>
+      <trkpt lat="12.811372" lon="77.374606">
+        <ele>730.2</ele>
+      </trkpt>
+      <trkpt lat="12.811372" lon="77.374606">
+        <ele>730.2</ele>
+      </trkpt>
+      <trkpt lat="12.812185" lon="77.374073">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.812999" lon="77.37354">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.813812" lon="77.373007">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.814626" lon="77.372474">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.815439" lon="77.371941">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.816253" lon="77.371408">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.817066" lon="77.370875">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.817066" lon="77.370875">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.817066" lon="77.370875">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.816253" lon="77.371408">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.815439" lon="77.371941">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.814626" lon="77.372474">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.813812" lon="77.373007">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.812999" lon="77.37354">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.812185" lon="77.374073">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.811372" lon="77.374606">
+        <ele>730.2</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>

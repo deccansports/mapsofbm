@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:gpxdata="http://www.cluetrust.com/XML/GPXDATA/1/0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="http://ridewithgps.com/" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd http://www.cluetrust.com/XML/GPXDATA/1/0 http://www.cluetrust.com/Schemas/gpxdata10.xsd">
+  <metadata>
+    <name>BERGMAN 102 SWIM BENGALURU</name>
+    <link href="https://ridewithgps.com/routes/54221825">
+      <text>BERGMAN 102 SWIM BENGALURU</text>
+    </link>
+    <time>2026-03-12T15:49:57Z</time>
+  </metadata>
+  <trk>
+    <name>BERGMAN 102 SWIM BENGALURU</name>
+    <trkseg>
+      <trkpt lat="12.811372" lon="77.374606">
+        <ele>730.2</ele>
+      </trkpt>
+      <trkpt lat="12.811372" lon="77.374606">
+        <ele>730.2</ele>
+      </trkpt>
+      <trkpt lat="12.812153" lon="77.374112">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.812934" lon="77.373619">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.813715" lon="77.373125">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.814496" lon="77.372632">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.815277" lon="77.372138">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.816058" lon="77.371645">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.816839" lon="77.371151">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.81762" lon="77.370658">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.818401" lon="77.370164">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.819182" lon="77.369671">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.819182" lon="77.369671">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.819182" lon="77.369671">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.818401" lon="77.370164">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.81762" lon="77.370658">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.816839" lon="77.371151">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.816058" lon="77.371645">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.815277" lon="77.372138">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.814496" lon="77.372632">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.813715" lon="77.373125">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.812934" lon="77.373619">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.812153" lon="77.374112">
+        <ele>732.0</ele>
+      </trkpt>
+      <trkpt lat="12.811372" lon="77.374606">
+        <ele>730.2</ele>
+      </trkpt>
+    </trkseg>
+  </trk>
+</gpx>
