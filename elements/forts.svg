@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Forts — Stone Grey #8C8680 -->
+  <defs>
+    <linearGradient id="stoneGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#A09891"/>
+      <stop offset="100%" stop-color="#6E6762"/>
+    </linearGradient>
+    <linearGradient id="skyBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4169E1" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#6B8FEF" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky background -->
+  <rect width="200" height="200" rx="10" fill="url(#skyBg)"/>
+  <!-- Hill/mountain base -->
+  <path d="M0,200 Q60,150 100,155 Q140,150 200,200 Z" fill="#6E6762"/>
+  <!-- Fort base wall -->
+  <rect x="30" y="115" width="140" height="85" rx="4" fill="url(#stoneGrad)"/>
+  <!-- Stone texture lines on main wall -->
+  <line x1="30" y1="135" x2="170" y2="135" stroke="#7A7470" stroke-width="1" opacity="0.6"/>
+  <line x1="30" y1="155" x2="170" y2="155" stroke="#7A7470" stroke-width="1" opacity="0.6"/>
+  <line x1="30" y1="175" x2="170" y2="175" stroke="#7A7470" stroke-width="1" opacity="0.6"/>
+  <line x1="80" y1="115" x2="80" y2="200" stroke="#7A7470" stroke-width="1" opacity="0.4"/>
+  <line x1="120" y1="115" x2="120" y2="200" stroke="#7A7470" stroke-width="1" opacity="0.4"/>
+  <!-- Gate arch -->
+  <path d="M78,200 L78,165 Q100,148 122,165 L122,200 Z" fill="#4A4541"/>
+  <!-- Left tower -->
+  <rect x="18" y="90" width="40" height="110" rx="3" fill="url(#stoneGrad)"/>
+  <!-- Left tower battlements -->
+  <rect x="18" y="82" width="8" height="12" rx="1" fill="#8C8680"/>
+  <rect x="30" y="82" width="8" height="12" rx="1" fill="#8C8680"/>
+  <rect x="42" y="82" width="8" height="12" rx="1" fill="#8C8680"/>
+  <!-- Left tower window -->
+  <path d="M30,120 L30,105 Q38,98 46,105 L46,120 Z" fill="#3A3530"/>
+  <!-- Right tower -->
+  <rect x="142" y="90" width="40" height="110" rx="3" fill="url(#stoneGrad)"/>
+  <!-- Right tower battlements -->
+  <rect x="142" y="82" width="8" height="12" rx="1" fill="#8C8680"/>
+  <rect x="154" y="82" width="8" height="12" rx="1" fill="#8C8680"/>
+  <rect x="166" y="82" width="8" height="12" rx="1" fill="#8C8680"/>
+  <!-- Right tower window -->
+  <path d="M154,120 L154,105 Q162,98 170,105 L170,120 Z" fill="#3A3530"/>
+  <!-- Center tower -->
+  <rect x="72" y="75" width="56" height="42" rx="3" fill="url(#stoneGrad)"/>
+  <!-- Center battlements -->
+  <rect x="72" y="67" width="8" height="11" rx="1" fill="#8C8680"/>
+  <rect x="84" y="67" width="8" height="11" rx="1" fill="#8C8680"/>
+  <rect x="96" y="67" width="8" height="11" rx="1" fill="#8C8680"/>
+  <rect x="108" y="67" width="8" height="11" rx="1" fill="#8C8680"/>
+  <rect x="120" y="67" width="8" height="11" rx="1" fill="#8C8680"/>
+  <!-- Flag on center tower -->
+  <line x1="104" y1="28" x2="104" y2="68" stroke="#5A5550" stroke-width="2.5"/>
+  <path d="M104,28 Q124,36 140,28 L140,54 Q124,62 104,54 Z" fill="#FF7722"/>
+  <text x="100" y="232" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#8C8680" font-weight="bold" letter-spacing="1">FORTS</text>
+</svg>

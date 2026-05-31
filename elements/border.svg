@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Border — Antique Gold #C9A84C -->
+  <!-- Outer border frame -->
+  <rect x="4" y="4" width="192" height="192" rx="10" fill="none" stroke="#C9A84C" stroke-width="6"/>
+  <!-- Inner border double line -->
+  <rect x="14" y="14" width="172" height="172" rx="7" fill="none" stroke="#C9A84C" stroke-width="2"/>
+  <rect x="18" y="18" width="164" height="164" rx="6" fill="none" stroke="#E8D060" stroke-width="1" opacity="0.7"/>
+  <!-- Corner rosette — top-left -->
+  <circle cx="22" cy="22" r="10" fill="#C9A84C"/>
+  <circle cx="22" cy="22" r="6" fill="#B8941F"/>
+  <circle cx="22" cy="22" r="3" fill="#E8D060"/>
+  <!-- Corner rosette — top-right -->
+  <circle cx="178" cy="22" r="10" fill="#C9A84C"/>
+  <circle cx="178" cy="22" r="6" fill="#B8941F"/>
+  <circle cx="178" cy="22" r="3" fill="#E8D060"/>
+  <!-- Corner rosette — bottom-left -->
+  <circle cx="22" cy="178" r="10" fill="#C9A84C"/>
+  <circle cx="22" cy="178" r="6" fill="#B8941F"/>
+  <circle cx="22" cy="178" r="3" fill="#E8D060"/>
+  <!-- Corner rosette — bottom-right -->
+  <circle cx="178" cy="178" r="10" fill="#C9A84C"/>
+  <circle cx="178" cy="178" r="6" fill="#B8941F"/>
+  <circle cx="178" cy="178" r="3" fill="#E8D060"/>
+  <!-- Mid-side ornament — top -->
+  <ellipse cx="100" cy="14" rx="18" ry="8" fill="#C9A84C"/>
+  <polygon points="100,4 94,14 100,11 106,14" fill="#E8D060"/>
+  <!-- Mid-side ornament — bottom -->
+  <ellipse cx="100" cy="186" rx="18" ry="8" fill="#C9A84C"/>
+  <polygon points="100,196 94,186 100,189 106,186" fill="#E8D060"/>
+  <!-- Mid-side ornament — left -->
+  <ellipse cx="14" cy="100" rx="8" ry="18" fill="#C9A84C"/>
+  <polygon points="4,100 14,94 11,100 14,106" fill="#E8D060"/>
+  <!-- Mid-side ornament — right -->
+  <ellipse cx="186" cy="100" rx="8" ry="18" fill="#C9A84C"/>
+  <polygon points="196,100 186,94 189,100 186,106" fill="#E8D060"/>
+  <!-- Decorative inner diamond pattern -->
+  <polygon points="100,55 110,100 100,145 90,100" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+  <polygon points="55,100 100,90 145,100 100,110" fill="none" stroke="#C9A84C" stroke-width="1.5" opacity="0.5"/>
+  <!-- Central lotus motif -->
+  <circle cx="100" cy="100" r="22" fill="none" stroke="#C9A84C" stroke-width="2"/>
+  <circle cx="100" cy="100" r="12" fill="#C9A84C" opacity="0.3"/>
+  <circle cx="100" cy="100" r="5" fill="#C9A84C"/>
+  <!-- Lotus petals -->
+  <ellipse cx="100" cy="82" rx="5" ry="10" fill="#C9A84C" opacity="0.7"/>
+  <ellipse cx="100" cy="118" rx="5" ry="10" fill="#C9A84C" opacity="0.7"/>
+  <ellipse cx="82" cy="100" rx="10" ry="5" fill="#C9A84C" opacity="0.7"/>
+  <ellipse cx="118" cy="100" rx="10" ry="5" fill="#C9A84C" opacity="0.7"/>
+  <ellipse cx="87" cy="87" rx="5" ry="9" fill="#C9A84C" opacity="0.5" transform="rotate(-45 87 87)"/>
+  <ellipse cx="113" cy="87" rx="5" ry="9" fill="#C9A84C" opacity="0.5" transform="rotate(45 113 87)"/>
+  <ellipse cx="87" cy="113" rx="5" ry="9" fill="#C9A84C" opacity="0.5" transform="rotate(45 87 113)"/>
+  <ellipse cx="113" cy="113" rx="5" ry="9" fill="#C9A84C" opacity="0.5" transform="rotate(-45 113 113)"/>
+</svg>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bergman Maratha — Design Elements</title>
+  <style>
+    /* ── Base reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Color palette variables ── */
+    :root {
+      --antique-gold   : #C9A84C;
+      --saffron-orange : #FF7722;
+      --royal-blue     : #4169E1;
+      --stone-grey     : #8C8680;
+      --deep-maroon    : #7B0D1E;
+      --metallic-silver: #A8A9AD;
+      --bronze         : #CD7F32;
+      --gold           : #D4AF37;
+      --bg-dark        : #1A0A00;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      background-image:
+        radial-gradient(ellipse at 20% 10%, rgba(201,168,76,0.12) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 90%, rgba(123,13,30,0.15) 0%, transparent 50%);
+      color: var(--antique-gold);
+      font-family: 'Georgia', 'Times New Roman', serif;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem 1.5rem;
+      border-bottom: 3px solid var(--antique-gold);
+      position: relative;
+    }
+    header::before,
+    header::after {
+      content: "⚔";
+      color: var(--antique-gold);
+      font-size: 1.8rem;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-60%);
+    }
+    header::before { left: 2rem; }
+    header::after  { right: 2rem; }
+
+    header h1 {
+      font-size: clamp(1.6rem, 4vw, 2.8rem);
+      letter-spacing: 0.15em;
+      color: var(--antique-gold);
+      text-shadow: 0 0 20px rgba(201,168,76,0.6), 0 2px 4px #000;
+      line-height: 1.25;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 0.95rem;
+      color: var(--saffron-orange);
+      letter-spacing: 0.1em;
+      opacity: 0.9;
+    }
+
+    /* ── Palette strip ── */
+    .palette-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+      padding: 1.2rem 1rem;
+      background: rgba(201,168,76,0.06);
+      border-bottom: 1px solid rgba(201,168,76,0.25);
+    }
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      letter-spacing: 0.05em;
+      color: #ccc;
+    }
+    .swatch-dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.2);
+      flex-shrink: 0;
+    }
+
+    /* ── Grid ── */
+    .elements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 2rem;
+      padding: 2.5rem clamp(1rem, 4vw, 3rem);
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── Card ── */
+    .element-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(201,168,76,0.3);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      cursor: default;
+    }
+    .element-card:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6), 0 0 20px var(--card-glow, rgba(201,168,76,0.3));
+      border-color: var(--card-accent, var(--antique-gold));
+    }
+
+    /* Per-card accent colours */
+    .card-shivaji  { --card-glow: rgba(201,168,76,0.4); --card-accent: #C9A84C; }
+    .card-flag     { --card-glow: rgba(255,119,34,0.4); --card-accent: #FF7722; }
+    .card-sky      { --card-glow: rgba(65,105,225,0.4); --card-accent: #4169E1; }
+    .card-forts    { --card-glow: rgba(140,134,128,0.4); --card-accent: #8C8680; }
+    .card-border   { --card-glow: rgba(201,168,76,0.4); --card-accent: #C9A84C; }
+    .card-pune     { --card-glow: rgba(123,13,30,0.5);  --card-accent: #9B1530; }
+    .card-swords   { --card-glow: rgba(168,169,173,0.4); --card-accent: #BFC1C2; }
+    .card-shields  { --card-glow: rgba(205,127,50,0.4); --card-accent: #CD7F32; }
+
+    .card-image-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem 1rem 1rem;
+      background: rgba(0,0,0,0.25);
+    }
+    .card-image-wrap img {
+      max-width: 180px;
+      height: 200px;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 4px 10px rgba(0,0,0,0.7));
+    }
+
+    .card-info {
+      width: 100%;
+      padding: 0.9rem 1rem 1rem;
+      text-align: center;
+    }
+    .card-info h2 {
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      font-weight: bold;
+      color: var(--card-accent, var(--antique-gold));
+      text-transform: uppercase;
+      margin-bottom: 0.4rem;
+    }
+    .color-pill {
+      display: inline-block;
+      padding: 0.2rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.72rem;
+      letter-spacing: 0.08em;
+      border: 1px solid var(--card-accent, var(--antique-gold));
+      color: var(--card-accent, var(--antique-gold));
+      background: rgba(255,255,255,0.04);
+    }
+    .color-swatch-inline {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 4px;
+      vertical-align: middle;
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 1px solid rgba(201,168,76,0.25);
+      color: var(--stone-grey);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      margin-top: 1rem;
+    }
+    footer span { color: var(--antique-gold); }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <h1>Bergman Maratha<br>Design Elements</h1>
+  <p>Inspired by the legacy of Chhatrapati Shivaji Maharaj &amp; the spirit of Maharashtra</p>
+</header>
+
+<!-- ══ PALETTE STRIP ══ -->
+<div class="palette-strip">
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#C9A84C;"></span>Antique Gold #C9A84C
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#FF7722;"></span>Saffron Orange #FF7722
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#4169E1;"></span>Royal Blue #4169E1
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#8C8680;"></span>Stone Grey #8C8680
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#7B0D1E;"></span>Deep Maroon #7B0D1E
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#A8A9AD;"></span>Metallic Silver #A8A9AD
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#CD7F32;"></span>Bronze #CD7F32
+  </div>
+  <div class="swatch">
+    <span class="swatch-dot" style="background:#D4AF37;"></span>Gold #D4AF37
+  </div>
+</div>
+
+<!-- ══ ELEMENTS GRID ══ -->
+<section class="elements-grid">
+
+  <!-- 1 · Shivaji Maharaj -->
+  <article class="element-card card-shivaji">
+    <div class="card-image-wrap">
+      <img src="elements/shivaji.svg" alt="Shivaji Maharaj silhouette in Antique Gold"/>
+    </div>
+    <div class="card-info">
+      <h2>Shivaji Maharaj</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#C9A84C;"></span>
+        Antique Gold
+      </span>
+    </div>
+  </article>
+
+  <!-- 2 · Bhagwa Flag -->
+  <article class="element-card card-flag">
+    <div class="card-image-wrap">
+      <img src="elements/bhagwa_flag.svg" alt="Bhagwa (Saffron) Flag"/>
+    </div>
+    <div class="card-info">
+      <h2>Bhagwa Flag</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#FF7722;"></span>
+        Saffron Orange
+      </span>
+    </div>
+  </article>
+
+  <!-- 3 · Sky -->
+  <article class="element-card card-sky">
+    <div class="card-image-wrap">
+      <img src="elements/sky.svg" alt="Sky in Royal Blue"/>
+    </div>
+    <div class="card-info">
+      <h2>Sky</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#4169E1;"></span>
+        Royal Blue
+      </span>
+    </div>
+  </article>
+
+  <!-- 4 · Forts -->
+  <article class="element-card card-forts">
+    <div class="card-image-wrap">
+      <img src="elements/forts.svg" alt="Maratha Fort in Stone Grey"/>
+    </div>
+    <div class="card-info">
+      <h2>Forts</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#8C8680;"></span>
+        Stone Grey
+      </span>
+    </div>
+  </article>
+
+  <!-- 5 · Border -->
+  <article class="element-card card-border">
+    <div class="card-image-wrap">
+      <img src="elements/border.svg" alt="Ornamental Border in Antique Gold"/>
+    </div>
+    <div class="card-info">
+      <h2>Border</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#C9A84C;"></span>
+        Antique Gold
+      </span>
+    </div>
+  </article>
+
+  <!-- 6 · Pune Plate -->
+  <article class="element-card card-pune">
+    <div class="card-image-wrap">
+      <img src="elements/pune_plate.svg" alt="Pune Plate in Deep Maroon"/>
+    </div>
+    <div class="card-info">
+      <h2>Pune Plate</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#7B0D1E;"></span>
+        Deep Maroon
+      </span>
+    </div>
+  </article>
+
+  <!-- 7 · Swords -->
+  <article class="element-card card-swords">
+    <div class="card-image-wrap">
+      <img src="elements/swords.svg" alt="Crossed Swords in Metallic Silver"/>
+    </div>
+    <div class="card-info">
+      <h2>Swords</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:#A8A9AD;"></span>
+        Metallic Silver
+      </span>
+    </div>
+  </article>
+
+  <!-- 8 · Shields -->
+  <article class="element-card card-shields">
+    <div class="card-image-wrap">
+      <img src="elements/shields.svg" alt="Maratha Shield in Bronze and Gold"/>
+    </div>
+    <div class="card-info">
+      <h2>Shields</h2>
+      <span class="color-pill">
+        <span class="color-swatch-inline" style="background:linear-gradient(135deg,#CD7F32,#D4AF37);background-color:#CD7F32;"></span>
+        Bronze + Gold
+      </span>
+    </div>
+  </article>
+
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <span>Bergman Triathlon</span> &nbsp;·&nbsp; Maratha Heritage Color Palette &nbsp;·&nbsp;
+  Chhatrapati Shivaji Maharaj Ki Jai 🚩
+</footer>
+
+</body>
+</html>

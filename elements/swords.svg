@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Swords — Metallic Silver #A8A9AD / #BFC1C2 -->
+  <defs>
+    <linearGradient id="bladeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8A8C90"/>
+      <stop offset="30%" stop-color="#D8DADD"/>
+      <stop offset="50%" stop-color="#F0F1F3"/>
+      <stop offset="70%" stop-color="#D8DADD"/>
+      <stop offset="100%" stop-color="#8A8C90"/>
+    </linearGradient>
+    <linearGradient id="handleGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="50%" stop-color="#8B6914"/>
+      <stop offset="100%" stop-color="#C9A84C"/>
+    </linearGradient>
+  </defs>
+  <!-- LEFT SWORD (angled /) -->
+  <g transform="rotate(-35 100 110)">
+    <!-- Blade -->
+    <polygon points="96,15 104,15 106,145 100,158 94,145" fill="url(#bladeGrad)"/>
+    <!-- Blade fuller (groove) -->
+    <line x1="100" y1="18" x2="100" y2="143" stroke="#C8CACC" stroke-width="1.5" opacity="0.7"/>
+    <!-- Cross-guard -->
+    <rect x="80" y="140" width="40" height="10" rx="5" fill="#A8A9AD"/>
+    <ellipse cx="80" cy="145" rx="7" ry="5" fill="#C9A84C"/>
+    <ellipse cx="120" cy="145" rx="7" ry="5" fill="#C9A84C"/>
+    <!-- Grip / Handle -->
+    <rect x="93" y="150" width="14" height="40" rx="4" fill="url(#handleGrad)"/>
+    <!-- Grip wrapping -->
+    <line x1="93" y1="158" x2="107" y2="158" stroke="#5A4010" stroke-width="2"/>
+    <line x1="93" y1="165" x2="107" y2="165" stroke="#5A4010" stroke-width="2"/>
+    <line x1="93" y1="172" x2="107" y2="172" stroke="#5A4010" stroke-width="2"/>
+    <line x1="93" y1="179" x2="107" y2="179" stroke="#5A4010" stroke-width="2"/>
+    <!-- Pommel -->
+    <ellipse cx="100" cy="192" rx="10" ry="7" fill="#C9A84C"/>
+    <circle cx="100" cy="192" r="4" fill="#E8D060"/>
+  </g>
+  <!-- RIGHT SWORD (angled \) -->
+  <g transform="rotate(35 100 110)">
+    <!-- Blade -->
+    <polygon points="96,15 104,15 106,145 100,158 94,145" fill="url(#bladeGrad)"/>
+    <!-- Blade fuller -->
+    <line x1="100" y1="18" x2="100" y2="143" stroke="#C8CACC" stroke-width="1.5" opacity="0.7"/>
+    <!-- Cross-guard -->
+    <rect x="80" y="140" width="40" height="10" rx="5" fill="#A8A9AD"/>
+    <ellipse cx="80" cy="145" rx="7" ry="5" fill="#C9A84C"/>
+    <ellipse cx="120" cy="145" rx="7" ry="5" fill="#C9A84C"/>
+    <!-- Grip -->
+    <rect x="93" y="150" width="14" height="40" rx="4" fill="url(#handleGrad)"/>
+    <line x1="93" y1="158" x2="107" y2="158" stroke="#5A4010" stroke-width="2"/>
+    <line x1="93" y1="165" x2="107" y2="165" stroke="#5A4010" stroke-width="2"/>
+    <line x1="93" y1="172" x2="107" y2="172" stroke="#5A4010" stroke-width="2"/>
+    <line x1="93" y1="179" x2="107" y2="179" stroke="#5A4010" stroke-width="2"/>
+    <!-- Pommel -->
+    <ellipse cx="100" cy="192" rx="10" ry="7" fill="#C9A84C"/>
+    <circle cx="100" cy="192" r="4" fill="#E8D060"/>
+  </g>
+  <text x="100" y="234" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#A8A9AD" font-weight="bold" letter-spacing="1">SWORDS</text>
+</svg>

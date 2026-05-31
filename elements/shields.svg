@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240">
+  <!-- Shields — Bronze #CD7F32 + Gold #D4AF37 -->
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#D4AF37"/>
+      <stop offset="35%" stop-color="#CD7F32"/>
+      <stop offset="65%" stop-color="#B87333"/>
+      <stop offset="100%" stop-color="#D4AF37"/>
+    </linearGradient>
+    <linearGradient id="shieldEdge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E8D060"/>
+      <stop offset="100%" stop-color="#8B5E1A"/>
+    </linearGradient>
+    <radialGradient id="bosGrad" cx="40%" cy="35%">
+      <stop offset="0%" stop-color="#E8D060"/>
+      <stop offset="100%" stop-color="#8B5E1A"/>
+    </radialGradient>
+  </defs>
+  <!-- Shield outer edge / rim -->
+  <path d="M100,18 L170,50 L170,130 Q170,175 100,210 Q30,175 30,130 L30,50 Z" fill="url(#shieldEdge)" stroke="#8B5E1A" stroke-width="2"/>
+  <!-- Shield body -->
+  <path d="M100,26 L162,55 L162,128 Q162,168 100,200 Q38,168 38,128 L38,55 Z" fill="url(#shieldGrad)"/>
+  <!-- Shield divider cross -->
+  <line x1="100" y1="30" x2="100" y2="196" stroke="#8B5E1A" stroke-width="3" opacity="0.5"/>
+  <line x1="42" y1="105" x2="158" y2="105" stroke="#8B5E1A" stroke-width="3" opacity="0.5"/>
+  <!-- Top-left quadrant: Saffron fill -->
+  <path d="M100,30 L162,55 L162,105 L100,105 Z" fill="#FF7722" opacity="0.3"/>
+  <!-- Top-right quadrant: Royal Blue fill -->
+  <path d="M100,30 L38,55 L38,105 L100,105 Z" fill="#4169E1" opacity="0.3"/>
+  <!-- Center boss -->
+  <circle cx="100" cy="105" r="22" fill="url(#bosGrad)"/>
+  <circle cx="100" cy="105" r="16" fill="#CD7F32"/>
+  <circle cx="100" cy="105" r="10" fill="#D4AF37"/>
+  <circle cx="100" cy="105" r="5" fill="#E8D060"/>
+  <!-- Rivet details -->
+  <circle cx="65" cy="70" r="5" fill="url(#bosGrad)"/>
+  <circle cx="135" cy="70" r="5" fill="url(#bosGrad)"/>
+  <circle cx="55" cy="130" r="5" fill="url(#bosGrad)"/>
+  <circle cx="145" cy="130" r="5" fill="url(#bosGrad)"/>
+  <!-- Tiger claw marks on shield (Shivaji symbol) -->
+  <path d="M74,82 Q78,78 82,82" stroke="#8B5E1A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M76,88 Q80,84 84,88" stroke="#8B5E1A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M116,82 Q120,78 124,82" stroke="#8B5E1A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M118,88 Q122,84 126,88" stroke="#8B5E1A" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <text x="100" y="234" text-anchor="middle" font-family="Georgia,serif" font-size="11" fill="#CD7F32" font-weight="bold" letter-spacing="1">SHIELDS</text>
+</svg>
