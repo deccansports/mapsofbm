@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community 5K Walkathon 2026 | Event & Project Report</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --panel: rgba(10, 25, 48, 0.88);
+      --panel-2: rgba(14, 36, 67, 0.92);
+      --line: rgba(255, 255, 255, 0.12);
+      --text: #eaf2ff;
+      --muted: #9eb4d3;
+      --blue: #35a7ff;
+      --green: #20d18f;
+      --gold: #ffc857;
+      --orange: #ff7b2f;
+      --red: #ff5d73;
+      --purple: #8678ff;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(53, 167, 255, 0.20), transparent 30%),
+        radial-gradient(circle at top right, rgba(255, 123, 47, 0.18), transparent 25%),
+        linear-gradient(135deg, #04101c 0%, #07111f 45%, #0b1c34 100%);
+      min-height: 100vh;
+    }
+
+    .page {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, rgba(53, 167, 255, 0.18), rgba(134, 120, 255, 0.12), rgba(255, 123, 47, 0.14));
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      box-shadow: var(--shadow);
+      padding: 40px;
+      margin-bottom: 24px;
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(6px);
+      opacity: 0.35;
+    }
+
+    .hero::before {
+      width: 260px;
+      height: 260px;
+      background: rgba(53, 167, 255, 0.24);
+      right: -80px;
+      top: -90px;
+    }
+
+    .hero::after {
+      width: 220px;
+      height: 220px;
+      background: rgba(255, 123, 47, 0.22);
+      left: -70px;
+      bottom: -100px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--gold);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 28px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 16px 0 12px;
+      font-size: clamp(2.1rem, 5vw, 4rem);
+      line-height: 1.04;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 760px;
+    }
+
+    .hero-kpis {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .kpi,
+    .card,
+    .table-card,
+    .timeline,
+    .plan-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .kpi {
+      padding: 18px;
+      backdrop-filter: blur(8px);
+    }
+
+    .kpi .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .kpi .value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .accent-blue { color: var(--blue); }
+    .accent-green { color: var(--green); }
+    .accent-gold { color: var(--gold); }
+    .accent-orange { color: var(--orange); }
+    .accent-red { color: var(--red); }
+
+    .hero-side {
+      display: grid;
+      gap: 14px;
+    }
+
+    .badge-row,
+    .top-nav,
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .pill,
+    .status-pill,
+    .tab-btn {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.06);
+      color: var(--text);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+
+    .status-pill.pending { color: var(--gold); }
+    .status-pill.planning { color: var(--blue); }
+    .status-pill.active { color: var(--green); }
+
+    .tab-wrap { margin-bottom: 24px; }
+
+    .top-nav {
+      gap: 12px;
+      margin-bottom: 18px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 8px 0 14px;
+      backdrop-filter: blur(10px);
+    }
+
+    .tab-btn {
+      cursor: pointer;
+      transition: 0.2s ease;
+    }
+
+    .tab-btn:hover,
+    .tab-btn.active {
+      background: linear-gradient(135deg, rgba(53, 167, 255, 0.22), rgba(134, 120, 255, 0.18));
+      border-color: rgba(53, 167, 255, 0.5);
+      color: white;
+    }
+
+    .tab-panel {
+      display: none;
+      animation: fade 0.25s ease;
+    }
+
+    .tab-panel.active { display: block; }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 18px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .card,
+    .table-card,
+    .timeline,
+    .plan-card {
+      padding: 22px;
+      overflow: hidden;
+    }
+
+    .card h2,
+    .table-card h2,
+    .timeline h2,
+    .plan-card h2 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .subtle {
+      color: var(--muted);
+      line-height: 1.65;
+      font-size: 0.95rem;
+    }
+
+    .highlight-list,
+    .stack-list,
+    .plan-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .highlight-item,
+    .stack-item,
+    .plan-item {
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.04);
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+
+    .highlight-item strong,
+    .stack-item strong,
+    .plan-item strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .money-grid {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .money-card {
+      border-radius: 18px;
+      padding: 18px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--line);
+    }
+
+    .money-card .label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .money-card .amount {
+      margin-top: 8px;
+      font-size: 1.7rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+    }
+
+    .money-card small {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin-top: 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    th, td {
+      padding: 13px 14px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: left;
+      vertical-align: top;
+      font-size: 0.92rem;
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.06);
+      color: white;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      position: sticky;
+      top: 0;
+    }
+
+    tbody tr:hover { background: rgba(255, 255, 255, 0.04); }
+
+    .good { color: var(--green); font-weight: 700; }
+    .warn { color: var(--gold); font-weight: 700; }
+    .info { color: var(--blue); font-weight: 700; }
+    .danger { color: var(--red); font-weight: 700; }
+
+    .sponsor-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .sponsor-card {
+      position: relative;
+      padding: 20px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      overflow: hidden;
+      min-height: 220px;
+    }
+
+    .sponsor-card.gold { background: linear-gradient(180deg, rgba(255, 200, 87, 0.26), rgba(255, 200, 87, 0.10)); }
+    .sponsor-card.silver { background: linear-gradient(180deg, rgba(194, 210, 232, 0.22), rgba(194, 210, 232, 0.08)); }
+    .sponsor-card.bronze { background: linear-gradient(180deg, rgba(255, 123, 47, 0.18), rgba(205, 127, 50, 0.10)); }
+    .sponsor-card.co { background: linear-gradient(180deg, rgba(53, 167, 255, 0.18), rgba(53, 167, 255, 0.08)); }
+
+    .sponsor-card h3 {
+      margin: 0 0 4px;
+      font-size: 1.25rem;
+    }
+
+    .tier-price {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.04em;
+    }
+
+    .sponsor-card ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .schedule {
+      display: grid;
+      gap: 14px;
+      margin-top: 16px;
+    }
+
+    .schedule-item {
+      display: grid;
+      grid-template-columns: 120px 1fr 180px;
+      gap: 16px;
+      align-items: center;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--line);
+    }
+
+    .schedule-item .time {
+      font-weight: 800;
+      color: var(--gold);
+      letter-spacing: 0.02em;
+    }
+
+    .reference-box {
+      margin-top: 16px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.04);
+      padding: 18px;
+    }
+
+    .reference-box a {
+      color: var(--blue);
+      word-break: break-all;
+    }
+
+    .footnote {
+      margin-top: 16px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 1180px) {
+      .hero-grid,
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .money-grid,
+      .sponsor-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .page { padding: 14px; }
+      .hero { padding: 24px; }
+      .schedule-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .top-nav {
+        position: static;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">2026 nonprofit event • sporty dashboard report</div>
+          <h1>Community 5K Walkathon 2026</h1>
+          <p>
+            A family-focused nonprofit walkathon organized by <strong>Marathi AAI Initiative</strong> and managed by
+            <strong>Deccan Sports Club</strong>. This project report combines the event overview, budgeting in USD,
+            sponsorship plan, volunteer structure, permit checklist, emergency response process, and event-day run sheet
+            into one sporty, presentation-ready HTML page.
+          </p>
+          <div class="hero-kpis">
+            <div class="kpi">
+              <div class="label">Expected Participants</div>
+              <div class="value accent-blue">200</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Volunteers</div>
+              <div class="value accent-green">50</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Projected Expenses</div>
+              <div class="value accent-orange">$7,400</div>
+            </div>
+            <div class="kpi">
+              <div class="label">Projected Net (with sponsors)</div>
+              <div class="value accent-gold">+$2,600</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="card">
+            <h2>Event Snapshot</h2>
+            <div class="badge-row" style="margin-top:12px;">
+              <span class="status-pill pending">Permit status: Pending</span>
+              <span class="status-pill planning">Venue: Lake Cunningham Marina Picnic Area</span>
+              <span class="status-pill active">Date: July 11, 2026</span>
+            </div>
+            <div class="highlight-list">
+              <div class="highlight-item">
+                <strong>Goals</strong>
+                Community engagement, fundraising, sponsor visibility, wellness activation, and family participation.
+              </div>
+              <div class="highlight-item">
+                <strong>Registration Model</strong>
+                5K Walk/Run at <strong>$30</strong> and 2K Family Walk at <strong>$50</strong> (1 adult + 1 kid).
+              </div>
+              <div class="highlight-item">
+                <strong>Operating Assumption</strong>
+                Budget is projected for <strong>200 participants</strong> and <strong>50 volunteers</strong> with a 10% contingency.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="tab-wrap">
+      <div class="top-nav">
+        <button class="tab-btn active" data-tab="overview">Overview</button>
+        <button class="tab-btn" data-tab="financials">Financials</button>
+        <button class="tab-btn" data-tab="sponsors">Sponsors</button>
+        <button class="tab-btn" data-tab="teams">Teams</button>
+        <button class="tab-btn" data-tab="permits">Permits & Safety</button>
+        <button class="tab-btn" data-tab="schedule">Schedule</button>
+        <button class="tab-btn" data-tab="tracker">Project Tracker</button>
+      </div>
+
+      <section class="tab-panel active" id="overview">
+        <div class="grid-2">
+          <div class="card">
+            <h2>Event Overview</h2>
+            <div class="stack-list">
+              <div class="stack-item"><strong>Event Type</strong>5K Walkathon with 2K family option.</div>
+              <div class="stack-item"><strong>Narrative</strong>Family-focused nonprofit event promoting health, wellness, and community connection.</div>
+              <div class="stack-item"><strong>Date & Time</strong>July 11, 2026 • 8:00 AM to 3:00 PM.</div>
+              <div class="stack-item"><strong>Venue</strong>Lake Cunningham Marina Picnic Area.</div>
+              <div class="stack-item"><strong>Audience</strong>Walkers, runners, parents, kids, grandparents, local community members, and sponsors.</div>
+            </div>
+          </div>
+          <div class="card">
+            <h2>Registration Details</h2>
+            <p class="subtle">
+              <strong># Walk. Connect. Inspire.</strong><br /><br />
+              Join us for a morning of fitness, family fun, and community spirit. The event features a 5K Walk/Run and a 2K Family Walk,
+              with hydration support, warm-up activity, sponsor booths, refreshments, medals, and digital certificates.
+            </p>
+            <div class="pill-row" style="margin-top:16px;">
+              <span class="pill">5K Walk/Run • $30</span>
+              <span class="pill">2K Family Walk • $50</span>
+              <span class="pill">Open to MAI + Deccan Sports communities</span>
+            </div>
+            <p class="footnote">
+              Registration fees support operations, permits, safety services, participant amenities, and community programming.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="financials">
+        <div class="table-card">
+          <h2>Projected Revenue, Expense, Profit & Loss (USD)</h2>
+          <p class="subtle">
+            Revenue assumes <strong>140 individual 5K registrations</strong> and <strong>30 family registrations</strong>, totaling approximately
+            <strong>200 participants</strong>. Sponsor revenue reflects the current target package mix shown below.
+          </p>
+          <div class="money-grid">
+            <div class="money-card">
+              <div class="label">Registration Revenue</div>
+              <div class="amount accent-blue">$5,700</div>
+              <small>140 × $30 + 30 × $50 = 200 people served.</small>
+            </div>
+            <div class="money-card">
+              <div class="label">Sponsor Target</div>
+              <div class="amount accent-gold">$4,300</div>
+              <small>1 Gold + 2 Silver + 2 Bronze + 3 Co-Sponsor packages.</small>
+            </div>
+            <div class="money-card">
+              <div class="label">Total Revenue</div>
+              <div class="amount accent-green">$10,000</div>
+              <small>Registration plus sponsor target.</small>
+            </div>
+            <div class="money-card">
+              <div class="label">Projected Expenses</div>
+              <div class="amount accent-orange">$7,400</div>
+              <small>Operational estimates for 200 participants + 50 volunteers.</small>
+            </div>
+            <div class="money-card">
+              <div class="label">Net Profit / (Loss)</div>
+              <div class="amount accent-gold">+$2,600</div>
+              <small>Without sponsors the event projects a <span class="danger">-$1,700 loss</span>.</small>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Item</th>
+                  <th>Qty</th>
+                  <th>Estimated Cost</th>
+                  <th>Actual Cost</th>
+                  <th>Owner</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Awards</td><td>Medals</td><td>200</td><td>$700</td><td>TBD</td><td>Operations</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Sound System</td><td>1</td><td>$120</td><td>TBD</td><td>Operations</td><td class="warn">Check team-owned option</td></tr>
+                <tr><td>Equipment</td><td>Canopy</td><td>4</td><td>$380</td><td>TBD</td><td>Operations</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Banners</td><td>1</td><td>$180</td><td>TBD</td><td>Marketing</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Tables</td><td>6</td><td>$84</td><td>TBD</td><td>Operations</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Flags</td><td>2</td><td>$60</td><td>TBD</td><td>Marketing</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Backdrop Stand</td><td>2</td><td>$170</td><td>TBD</td><td>Photo Booth</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Direction Signs</td><td>10</td><td>$120</td><td>TBD</td><td>Operations</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Water Station Signs</td><td>4</td><td>$48</td><td>TBD</td><td>Operations</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Photo Booth Decor</td><td>1</td><td>$160</td><td>TBD</td><td>Photo Booth</td><td class="info">Budgeted</td></tr>
+                <tr><td>Equipment</td><td>Finale Banners</td><td>1</td><td>$120</td><td>TBD</td><td>Marketing</td><td class="info">Budgeted</td></tr>
+                <tr><td>Insurance</td><td>Event Liability Insurance</td><td>1</td><td>$300</td><td>TBD</td><td>Finance</td><td class="warn">To procure</td></tr>
+                <tr><td>Medical</td><td>First Aid Kits</td><td>4</td><td>$200</td><td>TBD</td><td>Volunteer Management</td><td class="info">Budgeted</td></tr>
+                <tr><td>Permits</td><td>Park Permit</td><td>1</td><td>$1,100</td><td>TBD</td><td>Venue &amp; Permits</td><td class="warn">Pending</td></tr>
+                <tr><td>Refreshments</td><td>Water &amp; Electrolytes</td><td>250</td><td>$625</td><td>TBD</td><td>Refreshments</td><td class="info">Budgeted</td></tr>
+                <tr><td>Refreshments</td><td>After Snack</td><td>250</td><td>$1,250</td><td>TBD</td><td>Refreshments</td><td class="info">Budgeted</td></tr>
+                <tr><td>Refreshments</td><td>Fruits</td><td>250</td><td>$440</td><td>TBD</td><td>Refreshments</td><td class="info">Budgeted</td></tr>
+                <tr><td>Refreshments / Registration</td><td>Protein Bars</td><td>250</td><td>$300</td><td>TBD</td><td>Registration</td><td class="info">Budgeted</td></tr>
+                <tr><td>Registration</td><td>Bibs</td><td>200</td><td>$200</td><td>TBD</td><td>Registration</td><td class="info">Budgeted</td></tr>
+                <tr><td>Supplies</td><td>Markers</td><td>1 set</td><td>$30</td><td>TBD</td><td>Registration</td><td class="info">Budgeted</td></tr>
+                <tr><td>Supplies</td><td>Paper</td><td>1 set</td><td>$25</td><td>TBD</td><td>Registration</td><td class="info">Budgeted</td></tr>
+                <tr><td>Supplies</td><td>Pins for Bibs</td><td>800</td><td>$24</td><td>TBD</td><td>Registration</td><td class="info">Budgeted</td></tr>
+                <tr><td>Digital</td><td>Digital Certificates / Design</td><td>1</td><td>$75</td><td>TBD</td><td>Marketing</td><td class="info">Budgeted</td></tr>
+                <tr><td>Contingency</td><td>10% Reserve</td><td>-</td><td>$691</td><td>TBD</td><td>Finance</td><td class="warn">Recommended</td></tr>
+                <tr><td colspan="3"><strong>Total Estimated Expense</strong></td><td><strong>$7,400</strong></td><td>TBD</td><td>Finance</td><td class="good">Projected</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="sponsors">
+        <div class="table-card">
+          <h2>Sponsor Packages Needed</h2>
+          <p class="subtle">Sponsorship offsets operational costs, improves event presentation, and protects the nonprofit budget from a registration-only loss.</p>
+          <div class="sponsor-grid">
+            <div class="sponsor-card gold">
+              <h3>Gold Sponsor</h3>
+              <div class="tier-price">$1,000</div>
+              <ul>
+                <li>Top logo placement on main banner</li>
+                <li>Stage mention during ceremony and awards</li>
+                <li>Premium booth visibility</li>
+                <li>Logo on digital certificate and recap posts</li>
+              </ul>
+            </div>
+            <div class="sponsor-card silver">
+              <h3>Silver Sponsor</h3>
+              <div class="tier-price">$700</div>
+              <ul>
+                <li>Logo on sponsor wall and route signage</li>
+                <li>Social media mention</li>
+                <li>Booth or activation space</li>
+                <li>Recognition during sponsor activities</li>
+              </ul>
+            </div>
+            <div class="sponsor-card bronze">
+              <h3>Bronze Sponsor</h3>
+              <div class="tier-price">$500</div>
+              <ul>
+                <li>Logo on shared sponsor banner</li>
+                <li>Community booth presence</li>
+                <li>Mention in event thank-you post</li>
+                <li>Route-day brand visibility</li>
+              </ul>
+            </div>
+            <div class="sponsor-card co">
+              <h3>Co-Sponsor</h3>
+              <div class="tier-price">$300</div>
+              <ul>
+                <li>Logo on community partner board</li>
+                <li>Post-event appreciation mention</li>
+                <li>Booth support opportunity</li>
+                <li>Brand placement in recap deck</li>
+              </ul>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Target Tier Mix</th>
+                  <th>Units Needed</th>
+                  <th>Unit Value</th>
+                  <th>Total</th>
+                  <th>Use of Funds</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Gold</td><td>1</td><td>$1,000</td><td>$1,000</td><td>Permits and production</td></tr>
+                <tr><td>Silver</td><td>2</td><td>$700</td><td>$1,400</td><td>Refreshments and volunteer support</td></tr>
+                <tr><td>Bronze</td><td>2</td><td>$500</td><td>$1,000</td><td>Awards and signage</td></tr>
+                <tr><td>Co-Sponsor</td><td>3</td><td>$300</td><td>$900</td><td>Photo booth, certificates, sponsor booths</td></tr>
+                <tr><td colspan="3"><strong>Total Sponsor Goal</strong></td><td><strong>$4,300</strong></td><td><strong>Closes registration-only loss gap and funds community extras</strong></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="teams">
+        <div class="grid-2">
+          <div class="table-card">
+            <h2>Project Teams Needed</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Team</th>
+                    <th>Lead</th>
+                    <th>Responsibilities</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Venue &amp; Permits</td><td>TBD</td><td>Park coordination, permit submissions, agency follow-ups.</td></tr>
+                  <tr><td>Sponsors</td><td>TBD</td><td>Sponsor outreach, booth assignments, package closures.</td></tr>
+                  <tr><td>Registration</td><td>TBD</td><td>Registration setup, bibs, check-in, digital bib communication.</td></tr>
+                  <tr><td>Marketing</td><td>TBD</td><td>Social media, posters, banners, communications, certificates.</td></tr>
+                  <tr><td>Operations</td><td>TBD</td><td>Route, logistics, setup, signage, equipment, sound.</td></tr>
+                  <tr><td>Volunteer Management</td><td>TBD</td><td>Volunteer recruitment, shift planning, assignments, briefing.</td></tr>
+                  <tr><td>Finance</td><td>TBD</td><td>Budgeting, payments, tracking actuals, sponsor receipts.</td></tr>
+                  <tr><td>Photo Booth</td><td>TBD</td><td>Photo zone, decor, content capture, family experience.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="table-card">
+            <h2>Volunteer Planning</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Role</th>
+                    <th>Volunteers Needed</th>
+                    <th>Lead</th>
+                    <th>Shift</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Registration Desk</td><td>3</td><td>TBD</td><td>6:45 AM - 10:00 AM</td><td>Check-in, waiver support, bib handoff.</td></tr>
+                  <tr><td>Route Marshals</td><td>6</td><td>TBD</td><td>7:45 AM - 10:30 AM</td><td>Direct walkers, manage crossings, report incidents.</td></tr>
+                  <tr><td>Water Station</td><td>6</td><td>TBD</td><td>7:45 AM - 10:30 AM</td><td>Hydration, cups, quick refill, cleanup.</td></tr>
+                  <tr><td>Sponsor Booth Support</td><td>2</td><td>TBD</td><td>8:00 AM - 12:00 PM</td><td>Assist booth setup and guest flow.</td></tr>
+                  <tr><td>Stage &amp; Announcements</td><td>2</td><td>TBD</td><td>7:30 AM - 12:30 PM</td><td>Mic checks, cue transitions, awards support.</td></tr>
+                  <tr><td>Setup / Cleanup Crew</td><td>8</td><td>TBD</td><td>6:00 AM - 8:00 AM / 2:00 PM - 4:00 PM</td><td>Canopy, tables, banners, teardown.</td></tr>
+                  <tr><td>Athlete for Warmup</td><td>2</td><td>TBD</td><td>7:45 AM - 8:25 AM</td><td>Lead stretch and movement prep.</td></tr>
+                  <tr><td>Photographer / Videographer</td><td>6</td><td>TBD</td><td>7:30 AM - 1:30 PM</td><td>Cover start line, sponsors, families, awards.</td></tr>
+                  <tr><td colspan="5"><strong>Additional volunteers to reach 50</strong>: floaters, family activity support, parking guidance, route reset, and relief coverage.</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="permits">
+        <div class="grid-2">
+          <div class="table-card">
+            <h2>Permits Required</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Permit</th>
+                    <th>Agency</th>
+                    <th>Submitted</th>
+                    <th>Status</th>
+                    <th>Owner</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Park Permit</td><td>Lake Cunningham / local parks authority</td><td>No</td><td class="warn">Pending</td><td>Venue &amp; Permits</td></tr>
+                  <tr><td>Insurance Certificate</td><td>Event insurer / venue requirement</td><td>No</td><td class="warn">Pending</td><td>Finance</td></tr>
+                  <tr><td>Amplified Sound Permit</td><td>Local city / park events office</td><td>No</td><td class="warn">Pending</td><td>Operations</td></tr>
+                  <tr><td>Vendor / Sponsor Approval</td><td>Venue + park management</td><td>No</td><td class="warn">Pending</td><td>Sponsors</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="plan-card">
+            <h2>Medical Response Plan</h2>
+            <div class="plan-list">
+              <div class="plan-item">
+                <strong>1. Immediate Alert</strong>
+                Any marshal, volunteer, or lead spotting a medical emergency informs the command desk by phone or runner and calls <strong>911 immediately</strong> if the participant is unconscious, has chest pain, breathing difficulty, severe bleeding, heat distress, or a fall with possible head/neck injury.
+              </div>
+              <div class="plan-item">
+                <strong>2. Caller Script</strong>
+                State: “This is the Community 5K Walkathon at <strong>Lake Cunningham Marina Picnic Area</strong>. We have a medical emergency. Access point is the main event check-in area near the picnic/canopy setup. A volunteer in a bright event vest will meet responders at the nearest vehicle entry.”
+              </div>
+              <div class="plan-item">
+                <strong>3. Scene Control</strong>
+                The closest volunteers create space, pause foot traffic, keep the participant calm, and do not move the person unless there is immediate danger. A first-aid kit is brought to the scene while waiting for EMS.
+              </div>
+              <div class="plan-item">
+                <strong>4. Responder Escort</strong>
+                One pre-assigned lead waits at the venue entrance, flags down EMS, and escorts them directly to the participant using the fastest route. Another lead clears a path at the scene.
+              </div>
+              <div class="plan-item">
+                <strong>5. Documentation & Follow-up</strong>
+                Record the incident time, location, witness names, 911 call time, and action taken. Notify event leadership and the participant's listed emergency contact as soon as practical.
+              </div>
+            </div>
+            <p class="footnote">
+              Recommended: brief all team leads on the exact address, access point, and who owns the phone list before the event starts.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="schedule">
+        <div class="timeline">
+          <h2>Event Day Schedule & Planning</h2>
+          <div class="schedule">
+            <div class="schedule-item"><div class="time">6:00 AM</div><div>Setup begins: canopy, registration, sponsor booths, signs, sound, and water stations.</div><div class="subtle">Lead: Operations</div></div>
+            <div class="schedule-item"><div class="time">7:00 AM</div><div>Kit / bib distribution opens and volunteer briefing final check.</div><div class="subtle">Lead: Registration</div></div>
+            <div class="schedule-item"><div class="time">8:00 AM</div><div>Opening ceremony, welcome remarks, sponsor recognition, and safety briefing.</div><div class="subtle">Lead: Stage + MC</div></div>
+            <div class="schedule-item"><div class="time">8:30 AM</div><div>Walkathon start.</div><div class="subtle">Lead: Operations</div></div>
+            <div class="schedule-item"><div class="time">10:00 AM</div><div>Sponsor activities and community booths in active rotation.</div><div class="subtle">Lead: Sponsors</div></div>
+            <div class="schedule-item"><div class="time">12:00 PM</div><div>Awards ceremony and acknowledgements.</div><div class="subtle">Lead: Stage + Awards</div></div>
+            <div class="schedule-item"><div class="time">1:00 PM</div><div>Community activities, family zone, photo booth, and networking.</div><div class="subtle">Lead: Photo Booth + Volunteers</div></div>
+            <div class="schedule-item"><div class="time">2:00 PM</div><div>Cleanup begins and vendor/sponsor pack-down starts.</div><div class="subtle">Lead: Operations</div></div>
+            <div class="schedule-item"><div class="time">3:00 PM</div><div>Event close and final venue sweep.</div><div class="subtle">Lead: Event Director</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="tab-panel" id="tracker">
+        <div class="grid-2">
+          <div class="table-card">
+            <h2>Project Tracker View</h2>
+            <p class="subtle">The spreadsheet image was used as a planning reference. A native HTML tracker is recreated on the right for easier sharing and editing.</p>
+            <div class="reference-box">
+              <strong>Reference image URL</strong>
+              <p class="footnote" style="margin-top:10px;">
+                <a href="https://github.com/user-attachments/assets/f31ecbf9-0e2c-4c7e-b3f6-728db04ddc7f" target="_blank" rel="noopener noreferrer">https://github.com/user-attachments/assets/f31ecbf9-0e2c-4c7e-b3f6-728db04ddc7f</a>
+              </p>
+            </div>
+          </div>
+          <div class="table-card">
+            <h2>Recreated Task Tracker</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Workstream</th>
+                    <th>Task</th>
+                    <th>Owner</th>
+                    <th>Due Date</th>
+                    <th>Status</th>
+                    <th>Dependency</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>Project Planning</td><td>Finalize master plan and budget</td><td>TBD</td><td>This week</td><td class="info">In planning</td><td>-</td></tr>
+                  <tr><td>Venue &amp; Permits</td><td>Select venue</td><td>TBD</td><td>Immediate</td><td class="warn">Open</td><td>-</td></tr>
+                  <tr><td>Venue &amp; Permits</td><td>Submit permit application</td><td>TBD</td><td>Today</td><td class="warn">Pending</td><td>Venue selection</td></tr>
+                  <tr><td>Venue &amp; Permits</td><td>Obtain permit approval</td><td>TBD</td><td>Before promotions</td><td class="warn">Pending</td><td>Application submitted</td></tr>
+                  <tr><td>Sponsors</td><td>Identify and approach sponsors</td><td>TBD</td><td>This week</td><td class="info">In planning</td><td>Sponsorship deck</td></tr>
+                  <tr><td>Registration</td><td>Launch registration</td><td>TBD</td><td>After permit filing</td><td class="warn">Queued</td><td>Venue + pricing confirmed</td></tr>
+                  <tr><td>Volunteers</td><td>Recruit volunteers</td><td>TBD</td><td>4-6 weeks out</td><td class="info">In planning</td><td>Role list final</td></tr>
+                  <tr><td>Operations</td><td>Finalize route</td><td>TBD</td><td>4 weeks out</td><td class="warn">Open</td><td>Venue approval</td></tr>
+                  <tr><td>Operations</td><td>Confirm sound system</td><td>TBD</td><td>3 weeks out</td><td class="warn">Open</td><td>Inventory check</td></tr>
+                  <tr><td>Marketing</td><td>Publish event promotion</td><td>TBD</td><td>After registration opens</td><td class="warn">Queued</td><td>Creative ready</td></tr>
+                  <tr><td>Refreshments</td><td>Arrange food and drinks</td><td>TBD</td><td>2 weeks out</td><td class="warn">Open</td><td>Participant count trend</td></tr>
+                  <tr><td>Equipment</td><td>Arrange equipment</td><td>TBD</td><td>2 weeks out</td><td class="warn">Open</td><td>Vendor confirmation</td></tr>
+                  <tr><td>Banners &amp; Flag</td><td>Design and purchase</td><td>TBD</td><td>2 weeks out</td><td class="info">Design pending</td><td>Sponsor logos</td></tr>
+                  <tr><td>Medals</td><td>Design and purchase</td><td>TBD</td><td>3 weeks out</td><td class="info">Design pending</td><td>Final quantity</td></tr>
+                  <tr><td>Bibs</td><td>Design and purchase</td><td>TBD</td><td>2 weeks out</td><td class="info">Design pending</td><td>Registration count</td></tr>
+                  <tr><td>Digital Bib</td><td>Send digital bib after registration</td><td>TBD</td><td>Ongoing</td><td class="info">Process setup</td><td>Registration workflow</td></tr>
+                  <tr><td>Digital Certificate</td><td>Post-event digital certificate</td><td>TBD</td><td>After event</td><td class="info">Planned</td><td>Finisher list</td></tr>
+                  <tr><td>Onsite</td><td>Setup canopy</td><td>TBD</td><td>Event day</td><td class="warn">Open</td><td>Setup crew</td></tr>
+                  <tr><td>Onsite</td><td>Setup registrations</td><td>TBD</td><td>Event day</td><td class="warn">Open</td><td>Tables + bibs</td></tr>
+                  <tr><td>Onsite</td><td>Route marking</td><td>TBD</td><td>Event day</td><td class="warn">Open</td><td>Route map</td></tr>
+                  <tr><td>Onsite</td><td>Water station setup</td><td>TBD</td><td>Event day</td><td class="warn">Open</td><td>Supplies on site</td></tr>
+                  <tr><td>Onsite</td><td>Flag setup</td><td>TBD</td><td>Event day</td><td class="warn">Open</td><td>Marketing materials</td></tr>
+                  <tr><td>Onsite</td><td>Snack setup</td><td>TBD</td><td>Event day</td><td class="warn">Open</td><td>Refreshment delivery</td></tr>
+                  <tr><td>Kids Activities</td><td>Outdoor games</td><td>TBD</td><td>Event day</td><td class="info">Optional add-on</td><td>Volunteer coverage</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
+
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const target = button.dataset.tab;
+        tabButtons.forEach((btn) => btn.classList.remove('active'));
+        tabPanels.forEach((panel) => panel.classList.remove('active'));
+        button.classList.add('active');
+        document.getElementById(target).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
