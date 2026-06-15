@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>BERGMAN Sacramento Triathlon 2027</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #07111f;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #eaf2ff;
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+    table {
+      border-spacing: 0;
+      border-collapse: collapse;
+    }
+    .email-shell {
+      width: 100%;
+      background: linear-gradient(180deg, #07111f 0%, #0d1d34 100%);
+      padding: 24px 0;
+    }
+    .page {
+      width: 794px;
+      min-height: 1123px;
+      margin: 0 auto 20px;
+      background: #091729;
+      border: 1px solid #183252;
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+      page-break-after: always;
+      position: relative;
+    }
+    .page:last-child {
+      page-break-after: auto;
+    }
+    .page-inner {
+      padding: 34px 40px 78px;
+      background:
+        radial-gradient(circle at top right, rgba(0, 224, 255, 0.18), transparent 30%),
+        radial-gradient(circle at top left, rgba(255, 122, 24, 0.16), transparent 24%),
+        linear-gradient(180deg, #0d1c31 0%, #091729 100%);
+    }
+    .eyebrow {
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #0f2944;
+      border: 1px solid #1bd4ff;
+      color: #8befff;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p {
+      margin: 0;
+    }
+    h1 {
+      font-size: 34px;
+      line-height: 1.12;
+      font-weight: 800;
+      color: #ffffff;
+      margin-top: 18px;
+    }
+    h2 {
+      font-size: 26px;
+      line-height: 1.2;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    h3 {
+      font-size: 14px;
+      line-height: 1.3;
+      font-weight: 800;
+      color: #8befff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+    .lede {
+      margin-top: 16px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #c7d9f7;
+    }
+    .section-rule {
+      height: 4px;
+      width: 100px;
+      margin: 20px 0 26px;
+      background: linear-gradient(90deg, #ff7a18 0%, #1bd4ff 100%);
+      border-radius: 999px;
+    }
+    .hero-grid,
+    .two-col,
+    .three-col {
+      width: 100%;
+    }
+    .hero-card,
+    .card,
+    .stat,
+    .timeline,
+    .pill-list,
+    .course-band,
+    .value-box {
+      border-radius: 18px;
+      background: rgba(13, 32, 55, 0.88);
+      border: 1px solid #1a3658;
+    }
+    .hero-card,
+    .card,
+    .timeline,
+    .course-band,
+    .value-box {
+      padding: 18px;
+    }
+    .stat {
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .hero-kpi {
+      font-size: 28px;
+      font-weight: 800;
+      color: #ffffff;
+      line-height: 1;
+    }
+    .hero-label,
+    .small-copy,
+    .table-copy,
+    .bullet,
+    .page-footer,
+    .muted {
+      font-size: 13px;
+      line-height: 1.65;
+      color: #c7d9f7;
+    }
+    .small-copy strong,
+    .table-copy strong,
+    .bullet strong,
+    .muted strong {
+      color: #ffffff;
+    }
+    .metric {
+      font-size: 30px;
+      font-weight: 800;
+      color: #1bd4ff;
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+    .submetric {
+      font-size: 12px;
+      color: #8aa6c8;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+    .grid-gap {
+      height: 14px;
+    }
+    .list-table td {
+      vertical-align: top;
+      padding: 0 0 10px;
+    }
+    .list-icon {
+      width: 18px;
+      color: #ff7a18;
+      font-weight: 800;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .info-table {
+      width: 100%;
+    }
+    .info-table td {
+      padding: 11px 0;
+      border-bottom: 1px solid rgba(139, 239, 255, 0.12);
+      vertical-align: top;
+    }
+    .info-table tr:last-child td {
+      border-bottom: 0;
+    }
+    .label {
+      width: 36%;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #8befff;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      padding-right: 16px;
+    }
+    .value {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #ffffff;
+      font-weight: 600;
+    }
+    .badge {
+      display: inline-block;
+      margin: 0 8px 8px 0;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(27, 212, 255, 0.12);
+      border: 1px solid rgba(27, 212, 255, 0.28);
+      color: #d9f9ff;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .page-number {
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      bottom: 26px;
+    }
+    .page-number td {
+      border-top: 1px solid rgba(139, 239, 255, 0.14);
+      padding-top: 14px;
+    }
+    .page-footer-left {
+      font-size: 11px;
+      color: #8aa6c8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .page-footer-right {
+      font-size: 12px;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: right;
+    }
+    .route-step {
+      font-size: 16px;
+      line-height: 1.45;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      padding: 8px 0;
+    }
+    .arrow {
+      text-align: center;
+      color: #ff7a18;
+      font-size: 18px;
+      font-weight: 800;
+      padding: 2px 0;
+    }
+    .mini-title {
+      font-size: 13px;
+      line-height: 1.35;
+      color: #8befff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .price-box {
+      padding: 16px;
+      border-radius: 18px;
+      background: linear-gradient(180deg, rgba(255, 122, 24, 0.16) 0%, rgba(27, 212, 255, 0.08) 100%);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    .price {
+      font-size: 32px;
+      line-height: 1;
+      font-weight: 800;
+      color: #ffffff;
+      margin-bottom: 8px;
+    }
+    .split-cell {
+      width: 50%;
+      vertical-align: top;
+    }
+    .split-cell-left {
+      padding-right: 8px;
+    }
+    .split-cell-right {
+      padding-left: 8px;
+    }
+    .three-col td {
+      width: 33.33%;
+      vertical-align: top;
+      padding-right: 12px;
+    }
+    .three-col td:last-child {
+      padding-right: 0;
+    }
+    .schedule-time {
+      font-size: 12px;
+      color: #8befff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      width: 32%;
+      padding-right: 14px;
+    }
+    .schedule-item {
+      font-size: 14px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+    .divider-space {
+      height: 18px;
+    }
+    .note {
+      margin-top: 18px;
+      font-size: 12px;
+      line-height: 1.7;
+      color: #8aa6c8;
+    }
+    @media screen and (max-width: 860px) {
+      .page {
+        width: 100% !important;
+        min-height: auto !important;
+        margin-bottom: 16px !important;
+      }
+      .page-inner {
+        padding: 24px 20px 74px !important;
+      }
+    }
+    @media print {
+      body {
+        background: #ffffff !important;
+      }
+      .email-shell {
+        padding: 0 !important;
+        background: #ffffff !important;
+      }
+      .page {
+        width: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border: 0 !important;
+      }
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+    }
+  </style>
+</head>
+<body>
+  <table role="presentation" width="100%" class="email-shell" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Sport Event Proposal · A4 Email Presentation</span>
+              <h1 data-field="event_name">BERGMAN Sacramento Triathlon 2027</h1>
+              <p class="lede">A sporty, email-client-friendly presentation built from the provided proposal content and prepared for A4 page viewing, print sharing, and dynamic content replacement.</p>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%" class="hero-grid">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="hero-card">
+                      <tr><td><h3>Event Overview</h3></td></tr>
+                      <tr><td class="value" data-field="host_organization">Deccan Sports Club (USA)</td></tr>
+                      <tr><td class="small-copy">Host Organization</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="value" data-field="proposed_date">Second or Third Weekend of May 2027</td></tr>
+                      <tr><td class="small-copy">Proposed Date</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="value" data-field="venue">Sutter Health Park – Gold Lot, West Sacramento, California</td></tr>
+                      <tr><td class="small-copy">Venue</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%">
+                      <tr>
+                        <td class="stat">
+                          <div class="metric" data-field="total_capacity">500</div>
+                          <div class="submetric">Total Athletes</div>
+                        </td>
+                      </tr>
+                      <tr><td class="grid-gap"></td></tr>
+                      <tr>
+                        <td class="stat">
+                          <div class="metric" data-field="projected_profit">$54,000</div>
+                          <div class="submetric">Projected Net Profit</div>
+                        </td>
+                      </tr>
+                      <tr><td class="grid-gap"></td></tr>
+                      <tr>
+                        <td class="stat">
+                          <div class="metric" data-field="economic_impact">$300K–$500K</div>
+                          <div class="submetric">Economic Impact</div>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" style="margin-top:22px;">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>BERGMAN Olympic Triathlon</h3></td></tr>
+                      <tr><td class="small-copy">Swim: <strong data-field="olympic_swim">1.5 km</strong></td></tr>
+                      <tr><td class="small-copy">Bike: <strong data-field="olympic_bike">40 km</strong></td></tr>
+                      <tr><td class="small-copy">Run: <strong data-field="olympic_run">10 km</strong></td></tr>
+                      <tr><td class="small-copy">Cutoff: <strong data-field="olympic_cutoff">5 Hours</strong></td></tr>
+                      <tr><td class="note">Capacity: <strong data-field="olympic_capacity">350 Athletes</strong></td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>BERGMAN 102 Triathlon</h3></td></tr>
+                      <tr><td class="small-copy">Swim: <strong data-field="bm102_swim">2 km</strong></td></tr>
+                      <tr><td class="small-copy">Bike: <strong data-field="bm102_bike">80 km</strong></td></tr>
+                      <tr><td class="small-copy">Run: <strong data-field="bm102_run">20 km</strong></td></tr>
+                      <tr><td class="small-copy">Cutoff: <strong data-field="bm102_cutoff">8 Hours</strong></td></tr>
+                      <tr><td class="note">Capacity: <strong data-field="bm102_capacity">150 Athletes</strong></td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <table role="presentation" width="100%" class="page-number">
+                <tr>
+                  <td class="page-footer-left">BERGMAN Sacramento Triathlon 2027</td>
+                  <td class="page-footer-right">Page 1</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 1</span>
+              <h2>Event Objectives & Venue Layout</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Event Objectives</h3></td></tr>
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" class="list-table">
+                            <tr><td class="list-icon">•</td><td class="bullet" data-field="objective_1">Establish BERGMAN as Northern California's premier early-season triathlon.</td></tr>
+                            <tr><td class="list-icon">•</td><td class="bullet" data-field="objective_2">Create a high-quality triathlon experience at an affordable price point.</td></tr>
+                            <tr><td class="list-icon">•</td><td class="bullet" data-field="objective_3">Promote endurance sports and healthy lifestyles.</td></tr>
+                            <tr><td class="list-icon">•</td><td class="bullet" data-field="objective_4">Generate tourism and economic impact for Sacramento and West Sacramento.</td></tr>
+                            <tr><td class="list-icon">•</td><td class="bullet" data-field="objective_5">Build a sustainable annual event.</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Venue Layout</h3></td></tr>
+                      <tr><td class="badge" data-field="swim_start">Swim Start · Tiscornia Park</td></tr>
+                      <tr><td class="badge" data-field="swim_finish">Swim Finish · Etenesh Zeleke Public Dock</td></tr>
+                      <tr><td class="badge" data-field="transition_area">Transition Area · Gold Lot</td></tr>
+                      <tr><td class="badge" data-field="expo_village">Expo Village · Gold Lot</td></tr>
+                      <tr><td class="badge" data-field="awards_stage">Awards Stage · Gold Lot</td></tr>
+                      <tr><td class="badge" data-field="finish_line">Finish Line · Gold Lot</td></tr>
+                      <tr><td class="badge" data-field="recovery_zone">Athlete Recovery Zone · Gold Lot</td></tr>
+                      <tr><td class="badge" data-field="sponsor_expo">Sponsor Expo · Gold Lot</td></tr>
+                      <tr><td class="badge" data-field="food_court">Food Court · Gold Lot</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" style="margin-top:22px;">
+                <tr>
+                  <td class="three-col">
+                    <table role="presentation" width="100%">
+                      <tr>
+                        <td>
+                          <table role="presentation" width="100%" class="card">
+                            <tr><td><h3>Course System</h3></td></tr>
+                            <tr><td class="small-copy">Point-to-point swim with direct transition access.</td></tr>
+                          </table>
+                        </td>
+                        <td>
+                          <table role="presentation" width="100%" class="card">
+                            <tr><td><h3>Loop Logic</h3></td></tr>
+                            <tr><td class="small-copy">40 km bike loop and multi-loop run format for efficient operations.</td></tr>
+                          </table>
+                        </td>
+                        <td>
+                          <table role="presentation" width="100%" class="card">
+                            <tr><td><h3>Hub Model</h3></td></tr>
+                            <tr><td class="small-copy">Gold Lot anchors transition, finish, expo, recovery, and awards in one compact base.</td></tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 1 · Objectives & Venue</td><td class="page-footer-right">Page 2</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 2</span>
+              <h2>Swim Course</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="course-band">
+                      <tr><td><h3>Course Lengths</h3></td></tr>
+                      <tr><td class="small-copy">Olympic Triathlon: <strong data-field="swim_olympic_distance">1.5 km point-to-point</strong></td></tr>
+                      <tr><td class="small-copy">BERGMAN 102: <strong data-field="swim_102_distance">2.0 km point-to-point</strong></td></tr>
+                      <tr><td class="note">Athletes exit directly from the river to transition.</td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Swim Route</h3></td></tr>
+                      <tr><td class="route-step" data-field="swim_route_start">Tiscornia Park</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="swim_route_mid">Downstream Sacramento River</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="swim_route_finish">Etenesh Zeleke Public Dock</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Operational Notes</h3></td></tr>
+                      <tr><td class="bullet">The point-to-point format gives the event a premium riverfront identity and supports a visually strong race start and finish sequence.</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="bullet">Dynamic-ready fields can be replaced for swim distance, river segment, start dock, finish dock, and swim narrative without changing layout.</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="bullet">This page is structured for email-safe content blocks and can also be exported cleanly on A4 pages.</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 2 · Swim Course</td><td class="page-footer-right">Page 3</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 3</span>
+              <h2>Bike Course</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Bike Format</h3></td></tr>
+                      <tr><td class="small-copy">Course Length: <strong data-field="bike_course_length">40 km loop</strong></td></tr>
+                      <tr><td class="small-copy">Olympic Triathlon: <strong data-field="bike_olympic_loops">1 Loop</strong></td></tr>
+                      <tr><td class="small-copy">BERGMAN 102: <strong data-field="bike_102_loops">2 Loops</strong></td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Route Flow</h3></td></tr>
+                      <tr><td class="route-step" data-field="bike_route_1">Gold Lot</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="bike_route_2">River Corridor</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="bike_route_3">Freeport Area</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="bike_route_4">Southern Turnaround</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="bike_route_5">Return via River Corridor</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="bike_route_6">Gold Lot</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Aid Stations</h3></td></tr>
+                      <tr><td class="badge">20 km</td><td class="badge">40 km</td></tr>
+                      <tr><td class="badge">60 km</td><td class="badge">80 km</td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Bike Support</h3></td></tr>
+                      <tr><td class="badge" data-field="bike_support_1">Mechanical Support Vehicle</td></tr>
+                      <tr><td class="badge" data-field="bike_support_2">Sag Vehicle</td></tr>
+                      <tr><td class="badge" data-field="bike_support_3">Course Marshals</td></tr>
+                      <tr><td class="badge" data-field="bike_support_4">Medical Motorcycle</td></tr>
+                      <tr><td class="badge" data-field="bike_support_5">Lead Vehicle</td></tr>
+                      <tr><td class="badge" data-field="bike_support_6">Sweep Vehicle</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 3 · Bike Course</td><td class="page-footer-right">Page 4</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 4</span>
+              <h2>Run Course</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Run Format</h3></td></tr>
+                      <tr><td class="small-copy">Olympic Triathlon: <strong data-field="run_olympic_distance">10 km</strong> · <strong data-field="run_olympic_loops">2 Loops</strong></td></tr>
+                      <tr><td class="small-copy">BERGMAN 102: <strong data-field="run_102_distance">20 km</strong> · <strong data-field="run_102_loops">4 Loops</strong></td></tr>
+                      <tr><td class="note">Aid Stations: <strong data-field="run_aid_interval">Every 2.5 km</strong> · Medical Stations: <strong data-field="run_med_interval">Every 5 km</strong></td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Route Flow</h3></td></tr>
+                      <tr><td class="route-step" data-field="run_route_1">Gold Lot</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="run_route_2">River Walk Trail</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="run_route_3">Tower Bridge Crossing</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="run_route_4">Sacramento River Parkway</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="run_route_5">Tower Bridge Return</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="run_route_6">River Walk Trail</td></tr>
+                      <tr><td class="arrow">↓</td></tr>
+                      <tr><td class="route-step" data-field="run_route_7">Finish Line</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Run Experience</h3></td></tr>
+                      <tr><td class="bullet">The run stays visually energetic with bridge movement, riverfront transitions, and repeatable loop logic suited to presentation-style communication.</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="bullet">All route nodes are marked with dynamic field hooks for easy use in future event variants.</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 4 · Run Course</td><td class="page-footer-right">Page 5</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 5</span>
+              <h2>Event Weekend Schedule</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="timeline">
+                      <tr><td><h3>Friday</h3></td></tr>
+                      <tr><td>
+                        <table role="presentation" width="100%" class="info-table">
+                          <tr><td class="schedule-time">8:00 AM – 6:00 PM</td><td class="schedule-item" data-field="friday_1">Infrastructure Setup</td></tr>
+                          <tr><td class="schedule-time">12:00 PM – 6:00 PM</td><td class="schedule-item" data-field="friday_2">Vendor Setup</td></tr>
+                          <tr><td class="schedule-time">10:00 AM – 6:00 PM</td><td class="schedule-item" data-field="friday_3">Transition Setup</td></tr>
+                          <tr><td class="schedule-time">8:00 AM – 5:00 PM</td><td class="schedule-item" data-field="friday_4">Course Signage Installation</td></tr>
+                        </table>
+                      </td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="timeline">
+                      <tr><td><h3>Saturday · Athlete Check-In & Expo</h3></td></tr>
+                      <tr><td class="small-copy"><strong>Location:</strong> <span data-field="sat_location">Gold Lot</span></td></tr>
+                      <tr><td>
+                        <table role="presentation" width="100%" class="info-table">
+                          <tr><td class="schedule-time">10:00 AM – 5:00 PM</td><td class="schedule-item">Athlete Check-In</td></tr>
+                          <tr><td class="schedule-time">10:00 AM – 5:00 PM</td><td class="schedule-item">Bib Collection</td></tr>
+                          <tr><td class="schedule-time">10:00 AM – 5:00 PM</td><td class="schedule-item">Timing Chip Collection</td></tr>
+                          <tr><td class="schedule-time">10:00 AM – 5:00 PM</td><td class="schedule-item">Merchandise Collection</td></tr>
+                          <tr><td class="schedule-time">10:00 AM – 6:00 PM</td><td class="schedule-item">Expo Open</td></tr>
+                          <tr><td class="schedule-time">10:00 AM – 5:00 PM</td><td class="schedule-item">Bike Mechanical Support</td></tr>
+                          <tr><td class="schedule-time">2:00 PM – 5:30 PM</td><td class="schedule-item">Bike Check-In</td></tr>
+                          <tr><td class="schedule-time">4:00 PM</td><td class="schedule-item">Mandatory Athlete Briefing</td></tr>
+                          <tr><td class="schedule-time">7:00 PM</td><td class="schedule-item">Virtual Athlete Briefing</td></tr>
+                          <tr><td class="schedule-time">6:00 PM</td><td class="schedule-item">Expo Close</td></tr>
+                        </table>
+                      </td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 5 · Weekend Schedule</td><td class="page-footer-right">Page 6</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 6</span>
+              <h2>Athlete Pack & Race Day Schedule</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Athlete Pack Includes</h3></td></tr>
+                      <tr><td class="badge">Race Bib</td><td class="badge">Timing Chip</td></tr>
+                      <tr><td class="badge">Swim Cap</td><td class="badge">Bike Stickers</td></tr>
+                      <tr><td class="badge">Helmet Sticker</td><td class="badge">Transition Wristband</td></tr>
+                      <tr><td class="badge">Athlete Guide</td><td class="badge">Sponsor Gifts</td></tr>
+                      <tr><td class="badge">Finisher Bag</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="timeline">
+                      <tr><td><h3>Sunday · Race Day</h3></td></tr>
+                      <tr><td>
+                        <table role="presentation" width="100%" class="info-table">
+                          <tr><td class="schedule-time">4:30 AM</td><td class="schedule-item">Parking Opens</td></tr>
+                          <tr><td class="schedule-time">5:00 AM</td><td class="schedule-item">Transition Opens</td></tr>
+                          <tr><td class="schedule-time">5:00 AM – 6:15 AM</td><td class="schedule-item">Body Marking</td></tr>
+                          <tr><td class="schedule-time">5:15 AM – 6:15 AM</td><td class="schedule-item">Athlete Shuttle to Swim Start</td></tr>
+                          <tr><td class="schedule-time">6:30 AM</td><td class="schedule-item">Transition Closes</td></tr>
+                          <tr><td class="schedule-time">6:45 AM</td><td class="schedule-item">Final Announcements</td></tr>
+                          <tr><td class="schedule-time">6:55 AM</td><td class="schedule-item">National Anthem</td></tr>
+                          <tr><td class="schedule-time">7:00 AM</td><td class="schedule-item">Race Start</td></tr>
+                        </table>
+                      </td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 6 · Race Day</td><td class="page-footer-right">Page 7</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 7</span>
+              <h2>Cut Off Times & Awards</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>BERGMAN Olympic Triathlon</h3></td></tr>
+                      <tr><td>
+                        <table role="presentation" width="100%" class="info-table">
+                          <tr><td class="label">Race Start</td><td class="value">7:00 AM</td></tr>
+                          <tr><td class="label">Swim Cutoff</td><td class="value">8:05 AM</td></tr>
+                          <tr><td class="label">Bike Cutoff</td><td class="value">10:15 AM</td></tr>
+                          <tr><td class="label">Finish Cutoff</td><td class="value">12:00 PM</td></tr>
+                          <tr><td class="label">Total Time</td><td class="value">5 Hours</td></tr>
+                        </table>
+                      </td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>BERGMAN 102 Triathlon</h3></td></tr>
+                      <tr><td>
+                        <table role="presentation" width="100%" class="info-table">
+                          <tr><td class="label">Race Start</td><td class="value">7:00 AM</td></tr>
+                          <tr><td class="label">Swim Cutoff</td><td class="value">8:15 AM</td></tr>
+                          <tr><td class="label">Bike Cutoff</td><td class="value">12:15 PM</td></tr>
+                          <tr><td class="label">Finish Cutoff</td><td class="value">3:00 PM</td></tr>
+                          <tr><td class="label">Total Time</td><td class="value">8 Hours</td></tr>
+                        </table>
+                      </td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" style="margin-top:22px;">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="price-box">
+                      <tr><td><h3>Awards Schedule</h3></td></tr>
+                      <tr><td class="price">12:30 PM</td></tr>
+                      <tr><td class="small-copy">Olympic Awards</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="price">3:30 PM</td></tr>
+                      <tr><td class="small-copy">BERGMAN 102 Awards</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="price-box">
+                      <tr><td><h3>Event Close</h3></td></tr>
+                      <tr><td class="price">4:30 PM</td></tr>
+                      <tr><td class="small-copy">Full venue close-out target for race weekend operations.</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 7 · Cutoffs & Awards</td><td class="page-footer-right">Page 8</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 8</span>
+              <h2>Required Permissions · Venue & Swim</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td>
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Tiscornia Park · City of Sacramento</h3></td></tr>
+                      <tr><td class="badge">Park Use Permit</td><td class="badge">Special Event Permit</td></tr>
+                      <tr><td class="badge">Swim Start Approval</td><td class="badge">Temporary Structures Approval</td></tr>
+                      <tr><td class="badge">Insurance Approval</td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Etenesh Zeleke Public Dock · City of West Sacramento</h3></td></tr>
+                      <tr><td class="badge">Dock Usage Permit</td><td class="badge">Swim Exit Approval</td></tr>
+                      <tr><td class="badge">Public Access Restriction Approval</td><td class="badge">Safety Operations Approval</td></tr>
+                      <tr><td class="badge">Medical Access Approval</td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Gold Lot · Sutter Health Park Management</h3></td></tr>
+                      <tr><td class="badge">Venue Rental Agreement</td><td class="badge">Parking Lot Usage Agreement</td></tr>
+                      <tr><td class="badge">Transition Area Approval</td><td class="badge">Expo Approval</td></tr>
+                      <tr><td class="badge">Finish Line Approval</td><td class="badge">Vendor Approval</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 8 · Venue & Swim Permissions</td><td class="page-footer-right">Page 9</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 9</span>
+              <h2>Required Permissions · Bike & Run</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Bike Course</h3></td></tr>
+                      <tr><td class="small-copy"><strong>Required From:</strong> City of West Sacramento, Sacramento County, California Highway Patrol (if required)</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="badge">Traffic Control Plan</td></tr>
+                      <tr><td class="badge">Special Event Permit</td></tr>
+                      <tr><td class="badge">Road Usage Approval</td></tr>
+                      <tr><td class="badge">Intersection Control Approval</td></tr>
+                      <tr><td class="badge">Emergency Vehicle Access Plan</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Run Course</h3></td></tr>
+                      <tr><td class="small-copy"><strong>Required From:</strong> City of West Sacramento, City of Sacramento</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="badge">River Walk Trail Approval</td></tr>
+                      <tr><td class="badge">Sacramento River Parkway Approval</td></tr>
+                      <tr><td class="badge">Tower Bridge Crossing Approval</td></tr>
+                      <tr><td class="badge">Aid Station Approval</td></tr>
+                      <tr><td class="badge">Course Signage Approval</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 9 · Bike & Run Permissions</td><td class="page-footer-right">Page 10</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 10</span>
+              <h2>Safety Plan & Insurance</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Safety Plan</h3></td></tr>
+                      <tr><td class="mini-title">Swim</td></tr>
+                      <tr><td class="badge">Lifeguards</td><td class="badge">Kayaks</td></tr>
+                      <tr><td class="badge">SUPs</td><td class="badge">Rescue Boats</td></tr>
+                      <tr><td class="badge">Medical Boat</td><td class="badge">Swim Safety Director</td></tr>
+                      <tr><td class="badge">Water Quality Testing</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="mini-title">Bike</td></tr>
+                      <tr><td class="badge">Traffic Control Company</td><td class="badge">Course Marshals</td></tr>
+                      <tr><td class="badge">Lead Vehicle</td><td class="badge">Medical Motorcycle</td></tr>
+                      <tr><td class="badge">Sweep Vehicle</td><td class="badge">Police Support</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="mini-title">Run</td></tr>
+                      <tr><td class="badge">Medical Teams</td><td class="badge">Course Marshals</td></tr>
+                      <tr><td class="badge">Aid Stations</td><td class="badge">Bike Patrol</td></tr>
+                      <tr><td class="badge">Volunteer Teams</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Medical</h3></td></tr>
+                      <tr><td class="badge">Medical Director</td><td class="badge">2 Ambulances</td></tr>
+                      <tr><td class="badge">Medical Tent</td><td class="badge">EMT Teams</td></tr>
+                      <tr><td class="badge">AED Coverage</td><td class="badge">Hospital Coordination</td></tr>
+                    </table>
+                    <table role="presentation" width="100%" class="card" style="margin-top:18px;">
+                      <tr><td><h3>Insurance</h3></td></tr>
+                      <tr><td class="badge">General Liability</td></tr>
+                      <tr><td class="badge">Participant Accident Insurance</td></tr>
+                      <tr><td class="badge">Volunteer Insurance</td></tr>
+                      <tr><td class="badge">Directors & Officers Insurance</td></tr>
+                      <tr><td class="badge">Additional Insured Endorsements</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 10 · Safety & Insurance</td><td class="page-footer-right">Page 11</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 11</span>
+              <h2>Marketing Plan</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="timeline">
+                      <tr><td><h3>Commercial Timeline</h3></td></tr>
+                      <tr><td>
+                        <table role="presentation" width="100%" class="info-table">
+                          <tr><td class="label">Launch Registration</td><td class="value">December 2026</td></tr>
+                          <tr><td class="label">Early Bird</td><td class="value">December 2026 – January 2027</td></tr>
+                          <tr><td class="label">Regular Pricing</td><td class="value">February – April 2027</td></tr>
+                          <tr><td class="label">Late Registration</td><td class="value">May 2027</td></tr>
+                        </table>
+                      </td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Marketing Channels</h3></td></tr>
+                      <tr><td class="badge">Digital Marketing</td><td class="badge">Social Media Campaigns</td></tr>
+                      <tr><td class="badge">Influencer Partnerships</td><td class="badge">Triathlon Clubs</td></tr>
+                      <tr><td class="badge">Cycling Clubs</td><td class="badge">Running Clubs</td></tr>
+                      <tr><td class="badge">Corporate Teams</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 11 · Marketing Plan</td><td class="page-footer-right">Page 12</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 12</span>
+              <h2>Revenue Projection</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="price-box">
+                      <tr><td><h3>Revenue</h3></td></tr>
+                      <tr><td class="small-copy">Olympic · <strong data-field="olympic_revenue_formula">350 × $220</strong></td></tr>
+                      <tr><td class="price">$77,000</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="small-copy">BERGMAN 102 · <strong data-field="bm102_revenue_formula">150 × $280</strong></td></tr>
+                      <tr><td class="price">$42,000</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="small-copy">Registration Revenue</td></tr>
+                      <tr><td class="price">$119,000</td></tr>
+                      <tr><td class="small-copy">Sponsorship Revenue · $35,000</td></tr>
+                      <tr><td class="small-copy">Expo Revenue · $5,000</td></tr>
+                      <tr><td class="small-copy">Merchandise Revenue · $5,000</td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="price-box">
+                      <tr><td><h3>Totals</h3></td></tr>
+                      <tr><td class="small-copy">Total Revenue</td></tr>
+                      <tr><td class="price">$164,000</td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="small-copy">Projected Net Profit</td></tr>
+                      <tr><td class="price">$54,000</td></tr>
+                      <tr><td class="note">Revenue and pricing rows are marked for direct replacement if the event package, capacity, or fee model changes.</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 12 · Revenue Projection</td><td class="page-footer-right">Page 13</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 13</span>
+              <h2>Expense Projection</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%" class="card">
+                <tr><td>
+                  <table role="presentation" width="100%" class="info-table">
+                    <tr><td class="label">Venue & Permits</td><td class="value">$15,000</td></tr>
+                    <tr><td class="label">Traffic Control</td><td class="value">$20,000</td></tr>
+                    <tr><td class="label">Police & Public Safety</td><td class="value">$10,000</td></tr>
+                    <tr><td class="label">Insurance</td><td class="value">$6,000</td></tr>
+                    <tr><td class="label">Medical</td><td class="value">$6,000</td></tr>
+                    <tr><td class="label">Timing</td><td class="value">$6,000</td></tr>
+                    <tr><td class="label">Medals & Athlete Kit</td><td class="value">$15,000</td></tr>
+                    <tr><td class="label">Nutrition</td><td class="value">$5,000</td></tr>
+                    <tr><td class="label">Marketing</td><td class="value">$7,000</td></tr>
+                    <tr><td class="label">Operations & Staff</td><td class="value">$10,000</td></tr>
+                    <tr><td class="label">Miscellaneous</td><td class="value">$10,000</td></tr>
+                    <tr><td class="label">Total Expenses</td><td class="value">$110,000</td></tr>
+                  </table>
+                </td></tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 13 · Expense Projection</td><td class="page-footer-right">Page 14</td></tr></table></td></tr>
+        </table>
+
+        <table role="presentation" width="794" class="page" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="page-inner">
+              <span class="eyebrow">Section 14</span>
+              <h2>Economic Impact & Long Term Vision</h2>
+              <div class="section-rule"></div>
+              <table role="presentation" width="100%">
+                <tr>
+                  <td class="split-cell split-cell-left">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Economic Impact</h3></td></tr>
+                      <tr><td class="small-copy">Athletes: <strong data-field="impact_athletes">500</strong></td></tr>
+                      <tr><td class="small-copy">Average Travel Party: <strong data-field="impact_party_size">2.5 Persons</strong></td></tr>
+                      <tr><td class="small-copy">Visitors: <strong data-field="impact_visitors">1,250+</strong></td></tr>
+                      <tr><td class="small-copy">Estimated Hotel Nights: <strong data-field="impact_hotel_nights">800+</strong></td></tr>
+                      <tr><td class="small-copy">Estimated Local Economic Impact: <strong data-field="impact_value">$300,000 – $500,000</strong></td></tr>
+                    </table>
+                  </td>
+                  <td class="split-cell split-cell-right">
+                    <table role="presentation" width="100%" class="card">
+                      <tr><td><h3>Long Term Vision</h3></td></tr>
+                      <tr><td class="small-copy">2027: <strong data-field="vision_2027">500 Athletes</strong></td></tr>
+                      <tr><td class="small-copy">2028: <strong data-field="vision_2028">800 Athletes</strong></td></tr>
+                      <tr><td class="small-copy">2029: <strong data-field="vision_2029">1,200 Athletes</strong></td></tr>
+                      <tr><td class="divider-space"></td></tr>
+                      <tr><td class="bullet" data-field="vision_goal">Goal: To establish BERGMAN Sacramento as Northern California's premier early-season triathlon festival and a flagship endurance event in California.</td></tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table role="presentation" width="100%" style="margin-top:22px;">
+                <tr>
+                  <td class="value-box">
+                    <h3>Dynamic-Ready Notes</h3>
+                    <p class="small-copy">Key data points are wrapped with <strong>data-field</strong> hooks so the same HTML can be reused for future editions, alternate cities, or sponsor-specific mailouts while keeping the same sporty A4 presentation format.</p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr><td><table role="presentation" width="100%" class="page-number"><tr><td class="page-footer-left">Section 14 · Impact & Vision</td><td class="page-footer-right">Page 15</td></tr></table></td></tr>
+        </table>
+
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
