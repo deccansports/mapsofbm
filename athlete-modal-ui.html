@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Athlete Live Modal UI Mockup</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            panel: '#0b1220',
+            panelSoft: '#111a2d',
+            line: '#1f2a44',
+            accent: '#22d3ee',
+            accent2: '#38bdf8',
+            success: '#22c55e',
+          },
+          boxShadow: {
+            premium: '0 30px 90px rgba(0,0,0,.6)',
+          },
+          keyframes: {
+            grow: {
+              '0%': { width: '0%' },
+              '100%': { width: 'var(--w)' }
+            }
+          },
+          animation: {
+            grow: 'grow 900ms ease-out forwards'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-slate-950 text-slate-100 antialiased">
+  <div class="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(56,189,248,0.14),_transparent_40%),radial-gradient(circle_at_80%_20%,_rgba(34,197,94,0.12),_transparent_35%),linear-gradient(to_bottom,_#020617,_#020617)] p-3 sm:p-6">
+    <div class="mx-auto w-full max-w-6xl rounded-2xl border border-line bg-panel shadow-premium">
+      <div class="flex items-center justify-between border-b border-line px-4 py-3 sm:px-6">
+        <h1 class="text-sm font-semibold tracking-wide text-cyan-300">ATHLETE LIVE TRACKER · UI MOCKUP</h1>
+        <button class="rounded-md border border-slate-600 px-3 py-1.5 text-xs text-slate-300 transition hover:border-cyan-400 hover:text-cyan-200">Close ✕</button>
+      </div>
+
+      <div class="space-y-5 p-4 sm:p-6">
+        <!-- Header -->
+        <section class="rounded-xl border border-line bg-panelSoft p-4">
+          <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center gap-4">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Athlete" class="h-16 w-16 rounded-full border-2 border-cyan-400/60 object-cover" />
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h2 class="text-xl font-bold">John Smith</h2>
+                  <span class="rounded-md bg-cyan-500/20 px-2 py-0.5 text-xs font-semibold text-cyan-300">BIB 245</span>
+                  <span class="text-lg" aria-label="USA">🇺🇸</span>
+                </div>
+                <p class="text-sm text-slate-300">Bergman Tri Club · Male · 35-39 · Category: Age Group</p>
+              </div>
+            </div>
+            <span class="inline-flex w-fit items-center rounded-full border border-emerald-400/50 bg-emerald-500/15 px-3 py-1 text-sm font-semibold text-emerald-300">On Course</span>
+          </div>
+        </section>
+
+        <!-- Race status -->
+        <section class="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="rounded-lg border border-line bg-panelSoft p-3">
+            <p class="text-xs uppercase tracking-wide text-slate-400">Current Status</p>
+            <p class="mt-1 text-base font-semibold text-emerald-300">Bike Leg · On Course</p>
+          </div>
+          <div class="rounded-lg border border-line bg-panelSoft p-3">
+            <p class="text-xs uppercase tracking-wide text-slate-400">Elapsed Time</p>
+            <p class="mt-1 text-base font-semibold">03:18:42</p>
+          </div>
+          <div class="rounded-lg border border-line bg-panelSoft p-3">
+            <p class="text-xs uppercase tracking-wide text-slate-400">Finish Time (if finished)</p>
+            <p class="mt-1 text-base font-semibold text-slate-400">--</p>
+          </div>
+          <div class="rounded-lg border border-line bg-panelSoft p-3">
+            <p class="text-xs uppercase tracking-wide text-slate-400">Countdown (if not started)</p>
+            <p class="mt-1 text-base font-semibold text-slate-400">--:--:--</p>
+          </div>
+        </section>
+
+        <!-- Race overview -->
+        <section class="rounded-xl border border-line bg-panelSoft p-4">
+          <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-cyan-300">Race Overview</h3>
+          <div class="grid grid-cols-2 gap-3 md:grid-cols-3 xl:grid-cols-5">
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Race Status</p><p class="mt-1 font-semibold">On Course</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Current Leg</p><p class="mt-1 font-semibold">Bike</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Current Split</p><p class="mt-1 font-semibold">Bike 42 km</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Overall Time</p><p class="mt-1 font-semibold">03:18:42</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Overall Rank</p><p class="mt-1 font-semibold">16</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Category Rank</p><p class="mt-1 font-semibold">5</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Gender Rank</p><p class="mt-1 font-semibold">12</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Estimated Finish</p><p class="mt-1 font-semibold text-cyan-300">05:46:15</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Average Speed</p><p class="mt-1 font-semibold">34.8 km/h</p></div>
+            <div class="rounded-md border border-line bg-slate-900/50 p-3"><p class="text-xs text-slate-400">Average Pace</p><p class="mt-1 font-semibold">5:08/km</p></div>
+          </div>
+        </section>
+
+        <!-- Course progress -->
+        <section class="rounded-xl border border-line bg-panelSoft p-4">
+          <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-cyan-300">Course Progress</h3>
+          <div class="space-y-3 text-sm">
+            <div>
+              <div class="mb-1 flex justify-between"><span>Swim</span><span class="text-cyan-300">100%</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-800"><div class="h-full bg-emerald-400 [--w:100%] animate-grow transition-all"></div></div>
+            </div>
+            <div>
+              <div class="mb-1 flex justify-between"><span>Bike</span><span class="text-cyan-300">53%</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-800"><div class="h-full bg-cyan-400 [--w:53%] animate-grow transition-all"></div></div>
+            </div>
+            <div>
+              <div class="mb-1 flex justify-between"><span>Run</span><span class="text-cyan-300">0%</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-800"><div class="h-full bg-sky-300 [--w:0%] animate-grow transition-all"></div></div>
+            </div>
+            <div>
+              <div class="mb-1 flex justify-between"><span>Finish</span><span class="text-cyan-300">56%</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-800"><div class="h-full bg-indigo-400 [--w:56%] animate-grow transition-all"></div></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Timeline -->
+        <section class="rounded-xl border border-line bg-panelSoft p-0">
+          <div class="border-b border-line px-4 py-3">
+            <h3 class="text-sm font-semibold uppercase tracking-wide text-cyan-300">Timeline</h3>
+          </div>
+
+          <div class="max-h-[520px] overflow-y-auto">
+            <!-- SWIM -->
+            <div class="sticky top-0 z-10 border-b border-line bg-slate-900/95 px-4 py-3 backdrop-blur">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <p class="text-sm font-bold text-cyan-300">SWIM · 49:32</p>
+                <p class="text-xs text-slate-300">Overall Rank 16 · Category Rank 12 · Avg Pace 1:52/100m</p>
+              </div>
+            </div>
+            <div class="divide-y divide-line text-sm">
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">✓</span>
+                <div class="flex-1">
+                  <p class="font-semibold">Swim Start</p>
+                  <p class="text-slate-400">Distance: 0 km · Time: 07:00 · Elapsed: 00:00 · Pace: --</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">✓</span>
+                <div class="flex-1">
+                  <p class="font-semibold">Swim 500m</p>
+                  <p class="text-slate-400">Distance: 0.5 km · Time: 07:12 · Elapsed: 00:12 · Pace: 1:34/100m</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500/20 text-emerald-300">✓</span>
+                <div class="flex-1">
+                  <p class="font-semibold">Swim Exit</p>
+                  <p class="text-slate-400">Distance: 1.9 km · Time: 07:36 · Elapsed: 00:36 · Pace: 1:55/100m</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- T1 -->
+            <div class="sticky top-0 z-10 border-y border-line bg-slate-900/95 px-4 py-3 backdrop-blur">
+              <p class="text-sm font-bold text-cyan-300">T1</p>
+            </div>
+            <div class="divide-y divide-line text-sm">
+              <div class="flex items-start gap-3 px-4 py-3 border-l-4 border-cyan-400 bg-cyan-500/10">
+                <span class="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-cyan-300"></span>
+                <div class="flex-1">
+                  <p class="font-semibold text-cyan-200">T1 In Progress (Current)</p>
+                  <p class="text-slate-300">Elapsed: 03:12 · Position stable in top 20.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- BIKE -->
+            <div class="sticky top-0 z-10 border-y border-line bg-slate-900/95 px-4 py-3 backdrop-blur">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <p class="text-sm font-bold text-cyan-300">BIKE</p>
+                <p class="text-xs text-slate-300">Current Split: Bike 42 km</p>
+              </div>
+            </div>
+            <div class="divide-y divide-line text-sm">
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-700 text-slate-400">○</span>
+                <div class="flex-1">
+                  <p class="font-semibold text-slate-300">Bike 60 km (Pending)</p>
+                  <p class="text-slate-500">Expected around 09:48 · projected 35.1 km/h.</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-700 text-slate-400">○</span>
+                <div class="flex-1">
+                  <p class="font-semibold text-slate-300">Bike Exit (Pending)</p>
+                  <p class="text-slate-500">Expected around 10:36.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- T2 -->
+            <div class="sticky top-0 z-10 border-y border-line bg-slate-900/95 px-4 py-3 backdrop-blur">
+              <p class="text-sm font-bold text-cyan-300">T2</p>
+            </div>
+            <div class="divide-y divide-line text-sm">
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-700 text-slate-400">○</span>
+                <div class="flex-1">
+                  <p class="font-semibold text-slate-300">Transition 2 Pending</p>
+                  <p class="text-slate-500">Estimated duration 02:45.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- RUN -->
+            <div class="sticky top-0 z-10 border-y border-line bg-slate-900/95 px-4 py-3 backdrop-blur">
+              <p class="text-sm font-bold text-cyan-300">RUN</p>
+            </div>
+            <div class="divide-y divide-line text-sm">
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-700 text-slate-400">○</span>
+                <div class="flex-1">
+                  <p class="font-semibold text-slate-300">Run Start Pending</p>
+                  <p class="text-slate-500">Target run pace 5:08/km.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FINISH -->
+            <div class="sticky top-0 z-10 border-y border-line bg-slate-900/95 px-4 py-3 backdrop-blur">
+              <p class="text-sm font-bold text-cyan-300">FINISH</p>
+            </div>
+            <div class="divide-y divide-line text-sm">
+              <div class="flex items-start gap-3 px-4 py-3">
+                <span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-slate-700 text-slate-400">○</span>
+                <div class="flex-1">
+                  <p class="font-semibold text-slate-300">Projected Finish</p>
+                  <p class="text-slate-500">ETA 05:46:15 · confidence 82%.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="grid gap-4 lg:grid-cols-3">
+          <!-- Current position -->
+          <section class="rounded-xl border border-line bg-panelSoft p-4 lg:col-span-2">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-cyan-300">Current Position</h3>
+            <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+              <div class="rounded-md border border-line bg-slate-900/40 p-3"><p class="text-xs text-slate-400">Distance Covered</p><p class="mt-1 font-semibold">63 km</p></div>
+              <div class="rounded-md border border-line bg-slate-900/40 p-3"><p class="text-xs text-slate-400">Distance Remaining</p><p class="mt-1 font-semibold">50 km</p></div>
+              <div class="rounded-md border border-line bg-slate-900/40 p-3"><p class="text-xs text-slate-400">Current GPS</p><p class="mt-1 font-semibold text-cyan-300">37.33182, -121.89117</p></div>
+              <div class="rounded-md border border-line bg-slate-900/40 p-3"><p class="text-xs text-slate-400">Current Speed</p><p class="mt-1 font-semibold">34.8 km/h</p></div>
+              <div class="rounded-md border border-line bg-slate-900/40 p-3"><p class="text-xs text-slate-400">Last Timing Point</p><p class="mt-1 font-semibold">Bike 42 km · 09:22:14</p></div>
+              <div class="rounded-md border border-line bg-slate-900/40 p-3"><p class="text-xs text-slate-400">Last Updated</p><p class="mt-1 font-semibold">20 sec ago</p></div>
+            </div>
+          </section>
+
+          <!-- Prediction card -->
+          <section class="rounded-xl border border-cyan-400/35 bg-gradient-to-b from-cyan-500/10 to-slate-900 p-4">
+            <h3 class="mb-3 text-sm font-semibold uppercase tracking-wide text-cyan-300">Prediction Card</h3>
+            <div class="space-y-2 text-sm">
+              <p class="flex justify-between"><span class="text-slate-400">Next Split</span><span class="font-semibold">Bike 60 km</span></p>
+              <p class="flex justify-between"><span class="text-slate-400">ETA</span><span class="font-semibold">09:48:20</span></p>
+              <p class="flex justify-between"><span class="text-slate-400">Remaining Distance</span><span class="font-semibold">50 km</span></p>
+              <p class="flex justify-between"><span class="text-slate-400">Confidence</span><span class="font-semibold text-emerald-300">82%</span></p>
+              <p class="flex justify-between"><span class="text-slate-400">Average Pace Used</span><span class="font-semibold">5:08/km</span></p>
+            </div>
+          </section>
+        </div>
+
+        <!-- Debug panel -->
+        <details class="group rounded-xl border border-line bg-panelSoft">
+          <summary class="cursor-pointer list-none px-4 py-3 text-sm font-semibold uppercase tracking-wide text-amber-300 transition hover:bg-slate-900/50">Debug Panel (Developer View)</summary>
+          <div class="border-t border-line bg-slate-950 p-4 font-mono text-xs text-emerald-300">
+            <p>{</p>
+            <p class="pl-4">"athlete": "John Smith",</p>
+            <p class="pl-4">"bib": 245,</p>
+            <p class="pl-4">"status": "on_course",</p>
+            <p class="pl-4">"split": "bike_42km",</p>
+            <p class="pl-4">"elapsed": "03:18:42",</p>
+            <p class="pl-4">"gps": [37.33182, -121.89117],</p>
+            <p class="pl-4">"source": "mock-live-feed",</p>
+            <p class="pl-4">"updated_at": "2026-07-04T16:05:47Z"</p>
+            <p>}</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
